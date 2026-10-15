@@ -1,0 +1,23 @@
+hooks:
+  before_specify:
+  - extension: project
+    command: framework-hooks
+    description: 'before_specify: route the input (one new feature, one change, several
+      items)'
+    optional: false
+  before_plan:
+  - extension: project
+    command: framework-hooks
+    description: 'before_plan: spec (and change set) approved, no open clarifications,
+      architecture status Approved'
+    optional: false
+  before_implement:
+  - extension: project
+    command: framework-hooks
+    description: 'before_implement: every tasks section reviewed by the tech lead,
+      dependencies implemented'
+    optional: false
+installed:
+- bug
+settings:
+  auto_execute_hooks: true

@@ -1,0 +1,4767 @@
+{
+  "schema": "skill6-run/1",
+  "phase": 1,
+  "status": "complete",
+  "run_id": "001-todo-list-p1",
+  "user_story_id": "001-todo-list",
+  "user_story": "001-todo-list — To-Do List",
+  "user_story_name": "001-todo-list",
+  "feature": "001-todo-list",
+  "spec_level": "",
+  "source_tc_doc": "../../specs/001-todo-list/TEST-CASES-001-todo-list.md",
+  "source_sha256": "6dd1d28d341bf8654613f8b4103138876765abbb1f49c91be8dbb41b444beeab",
+  "environment": "local",
+  "build": "local build 2026-10-13 (Task Service jar 0.0.1-SNAPSHOT, web app Vite dev server)",
+  "framework": "@playwright/test 1.64.0",
+  "file_or_suite": "tests/Tasks_Tests/",
+  "ado_mode": "local",
+  "headed": true,
+  "workers_parallel": 2,
+  "started_at": "2026-10-13T15:35:51Z",
+  "finished_at": "2026-10-13T15:40:49Z",
+  "total_duration_ms": 298000,
+  "results_root": "reports/001-todo-list",
+  "screenshots_root": "screenshots/001-todo-list",
+  "logs_root": "automation-logs/001-todo-list",
+  "progress_log": "automation-logs/001-todo-list/run-progress-2026-10-13-1835.log",
+  "previous_phase": {
+    "phase": null,
+    "file": null,
+    "location": null
+  },
+  "compliance": {
+    "checkpoint_a": {
+      "gate": "PASS",
+      "scopeDigest": "dcc8246096a01c536650321f93b65537b5b50e604c1cb342b8b791973f8a8053",
+      "recorded_at": "2026-10-13T15:42:26+00:00",
+      "unresolved": [],
+      "note": "refreshed: playwright.config.ts testMatch changed after the first record (digest 4c21630b…), before any execution"
+    },
+    "checkpoint_b": {
+      "gate": "PASS",
+      "scopeDigest": "dcc8246096a01c536650321f93b65537b5b50e604c1cb342b8b791973f8a8053",
+      "recorded_at": "2026-10-13T15:42:26+00:00",
+      "unresolved": []
+    }
+  },
+  "run_plan": {
+    "user_story": "001-todo-list",
+    "generated": "2026-10-13T15:31:49+00:00",
+    "headed": true,
+    "workers_parallel": 2,
+    "projects": [
+      "chromium"
+    ],
+    "required_variants": {
+      "TC-TODO-001": [
+        "chromium--none--r0"
+      ],
+      "TC-TODO-002": [
+        "chromium--none--r0"
+      ],
+      "TC-TODO-003": [
+        "chromium--none--r0"
+      ],
+      "TC-TODO-004": [
+        "chromium--none--r0"
+      ],
+      "TC-TODO-005": [
+        "chromium--none--r0"
+      ],
+      "TC-TODO-006": [
+        "chromium--none--r0"
+      ],
+      "TC-TODO-007": [
+        "chromium--none--r0"
+      ],
+      "TC-TODO-008": [
+        "chromium--none--r0"
+      ],
+      "TC-TODO-009": [
+        "chromium--none--r0"
+      ],
+      "TC-TODO-010": [
+        "chromium--none--r0"
+      ],
+      "TC-TODO-011": [
+        "chromium--none--r0"
+      ],
+      "TC-TODO-012": [
+        "chromium--none--r0"
+      ],
+      "TC-TODO-013": [
+        "chromium--none--r0"
+      ],
+      "TC-TODO-014": [
+        "chromium--none--r0"
+      ],
+      "TC-TODO-015": [
+        "chromium--none--r0"
+      ],
+      "TC-TODO-016": [
+        "chromium--none--r0"
+      ],
+      "TC-TODO-017": [
+        "chromium--none--r0"
+      ],
+      "TC-TODO-018": [
+        "chromium--none--r0"
+      ],
+      "TC-TODO-019": [
+        "chromium--none--r0"
+      ],
+      "TC-TODO-020": [
+        "chromium--none--r0"
+      ],
+      "TC-TODO-021": [
+        "chromium--none--r0"
+      ],
+      "TC-TODO-022": [
+        "chromium--none--r0"
+      ],
+      "TC-TODO-023": [
+        "chromium--none--r0"
+      ],
+      "TC-TODO-024": [
+        "chromium--none--r0"
+      ],
+      "TC-TODO-025": [
+        "chromium--none--r0"
+      ],
+      "TC-TODO-026": [
+        "chromium--none--r0"
+      ],
+      "TC-TODO-027": [
+        "chromium--none--r0"
+      ],
+      "TC-TODO-028": [
+        "chromium--none--r0"
+      ],
+      "TC-TODO-029": [
+        "chromium--none--r0"
+      ],
+      "TC-TODO-031": [
+        "chromium--none--r0"
+      ]
+    },
+    "tc_hash": {},
+    "setup_groups": [],
+    "groups": [
+      {
+        "name": "parallel",
+        "mode": "parallel",
+        "workers": 2,
+        "tcs": [
+          "TC-TODO-003",
+          "TC-TODO-004",
+          "TC-TODO-022",
+          "TC-TODO-025"
+        ]
+      },
+      {
+        "name": "serial:empty-list",
+        "mode": "serial",
+        "workers": 1,
+        "tcs": [
+          "TC-TODO-001",
+          "TC-TODO-021",
+          "TC-TODO-029"
+        ],
+        "reason": "[D1] empties the global list; --workers 1 override; describe mode default (independent cases)"
+      },
+      {
+        "name": "serial:task-list",
+        "mode": "serial",
+        "workers": 1,
+        "tcs": [
+          "TC-TODO-002",
+          "TC-TODO-005",
+          "TC-TODO-006",
+          "TC-TODO-007",
+          "TC-TODO-008",
+          "TC-TODO-009",
+          "TC-TODO-010",
+          "TC-TODO-011",
+          "TC-TODO-012",
+          "TC-TODO-013",
+          "TC-TODO-014",
+          "TC-TODO-015",
+          "TC-TODO-016",
+          "TC-TODO-017",
+          "TC-TODO-018",
+          "TC-TODO-019",
+          "TC-TODO-020",
+          "TC-TODO-023",
+          "TC-TODO-024",
+          "TC-TODO-026",
+          "TC-TODO-027",
+          "TC-TODO-028",
+          "TC-TODO-031"
+        ],
+        "reason": "cases add / change / delete tasks of the one global list and assert positions in it; --workers 1 override; describe mode default (independent cases)"
+      }
+    ],
+    "decisions": [
+      {
+        "tc": "TC-TODO-001",
+        "mode": "serial",
+        "source": "field",
+        "why": "Shared data: D1 empty list"
+      },
+      {
+        "tc": "TC-TODO-002",
+        "mode": "serial",
+        "source": "field",
+        "why": "Data effect: creates / modifies / deletes on the one global list"
+      },
+      {
+        "tc": "TC-TODO-003",
+        "mode": "parallel",
+        "source": "field",
+        "why": "Data effect: read-only, own page only"
+      },
+      {
+        "tc": "TC-TODO-004",
+        "mode": "parallel",
+        "source": "field",
+        "why": "Data effect: read-only, own page only"
+      },
+      {
+        "tc": "TC-TODO-005",
+        "mode": "serial",
+        "source": "field",
+        "why": "Data effect: creates / modifies / deletes on the one global list"
+      },
+      {
+        "tc": "TC-TODO-006",
+        "mode": "serial",
+        "source": "field",
+        "why": "Data effect: creates / modifies / deletes on the one global list"
+      },
+      {
+        "tc": "TC-TODO-007",
+        "mode": "serial",
+        "source": "field",
+        "why": "Data effect: creates / modifies / deletes on the one global list"
+      },
+      {
+        "tc": "TC-TODO-008",
+        "mode": "serial",
+        "source": "field",
+        "why": "Data effect: creates / modifies / deletes on the one global list"
+      },
+      {
+        "tc": "TC-TODO-009",
+        "mode": "serial",
+        "source": "field",
+        "why": "Data effect: creates / modifies / deletes on the one global list"
+      },
+      {
+        "tc": "TC-TODO-010",
+        "mode": "serial",
+        "source": "field",
+        "why": "Data effect: creates / modifies / deletes on the one global list"
+      },
+      {
+        "tc": "TC-TODO-011",
+        "mode": "serial",
+        "source": "field",
+        "why": "Data effect: creates / modifies / deletes on the one global list"
+      },
+      {
+        "tc": "TC-TODO-012",
+        "mode": "serial",
+        "source": "field",
+        "why": "Data effect: creates / modifies / deletes on the one global list"
+      },
+      {
+        "tc": "TC-TODO-013",
+        "mode": "serial",
+        "source": "field",
+        "why": "Data effect: creates / modifies / deletes on the one global list"
+      },
+      {
+        "tc": "TC-TODO-014",
+        "mode": "serial",
+        "source": "field",
+        "why": "Data effect: creates / modifies / deletes on the one global list"
+      },
+      {
+        "tc": "TC-TODO-015",
+        "mode": "serial",
+        "source": "field",
+        "why": "Data effect: creates / modifies / deletes on the one global list"
+      },
+      {
+        "tc": "TC-TODO-016",
+        "mode": "serial",
+        "source": "field",
+        "why": "Data effect: creates / modifies / deletes on the one global list"
+      },
+      {
+        "tc": "TC-TODO-017",
+        "mode": "serial",
+        "source": "field",
+        "why": "Data effect: creates / modifies / deletes on the one global list"
+      },
+      {
+        "tc": "TC-TODO-018",
+        "mode": "serial",
+        "source": "field",
+        "why": "Data effect: creates / modifies / deletes on the one global list"
+      },
+      {
+        "tc": "TC-TODO-019",
+        "mode": "serial",
+        "source": "field",
+        "why": "Data effect: creates / modifies / deletes on the one global list"
+      },
+      {
+        "tc": "TC-TODO-020",
+        "mode": "serial",
+        "source": "field",
+        "why": "Data effect: creates / modifies / deletes on the one global list"
+      },
+      {
+        "tc": "TC-TODO-021",
+        "mode": "serial",
+        "source": "field",
+        "why": "Shared data: D1 empty list"
+      },
+      {
+        "tc": "TC-TODO-022",
+        "mode": "parallel",
+        "source": "field",
+        "why": "Data effect: read-only, own page only"
+      },
+      {
+        "tc": "TC-TODO-023",
+        "mode": "serial",
+        "source": "field",
+        "why": "Data effect: creates / modifies / deletes on the one global list"
+      },
+      {
+        "tc": "TC-TODO-024",
+        "mode": "serial",
+        "source": "field",
+        "why": "Data effect: creates / modifies / deletes on the one global list"
+      },
+      {
+        "tc": "TC-TODO-025",
+        "mode": "parallel",
+        "source": "field",
+        "why": "Data effect: read-only, own page only"
+      },
+      {
+        "tc": "TC-TODO-026",
+        "mode": "serial",
+        "source": "field",
+        "why": "Data effect: creates / modifies / deletes on the one global list"
+      },
+      {
+        "tc": "TC-TODO-027",
+        "mode": "serial",
+        "source": "field",
+        "why": "Data effect: creates / modifies / deletes on the one global list"
+      },
+      {
+        "tc": "TC-TODO-028",
+        "mode": "serial",
+        "source": "field",
+        "why": "Data effect: creates / modifies / deletes on the one global list"
+      },
+      {
+        "tc": "TC-TODO-029",
+        "mode": "serial",
+        "source": "field",
+        "why": "Shared data: D1 empty list"
+      },
+      {
+        "tc": "TC-TODO-031",
+        "mode": "serial",
+        "source": "field",
+        "why": "Data effect: creates / modifies / deletes on the one global list"
+      }
+    ],
+    "estimate": {
+      "serial_only_s": 109.5,
+      "planned_s": 104.5
+    }
+  },
+  "open_questions": {
+    "measuredAt": "2026-10-13T15:31:49+00:00",
+    "totals": {
+      "raised": 0,
+      "answered": 0,
+      "reusedFromLearning": 0,
+      "assumed": 0,
+      "unresolved": 0
+    },
+    "questions": []
+  },
+  "data_readiness": {
+    "measuredAt": "2026-10-13T15:31:49+00:00",
+    "verdict": "READY",
+    "requirements": [
+      {
+        "id": "R1",
+        "text": "[E1] application base URL answers (local web app dev server)",
+        "status": "READY",
+        "tcs": [
+          "TC-TODO-001",
+          "TC-TODO-002",
+          "TC-TODO-003",
+          "TC-TODO-004",
+          "TC-TODO-005",
+          "TC-TODO-006",
+          "TC-TODO-007",
+          "TC-TODO-008",
+          "TC-TODO-009",
+          "TC-TODO-010",
+          "TC-TODO-011",
+          "TC-TODO-012",
+          "TC-TODO-013",
+          "TC-TODO-014",
+          "TC-TODO-015",
+          "TC-TODO-016",
+          "TC-TODO-017",
+          "TC-TODO-018",
+          "TC-TODO-019",
+          "TC-TODO-020",
+          "TC-TODO-021",
+          "TC-TODO-022",
+          "TC-TODO-023",
+          "TC-TODO-024",
+          "TC-TODO-025",
+          "TC-TODO-026",
+          "TC-TODO-027",
+          "TC-TODO-028",
+          "TC-TODO-029",
+          "TC-TODO-031"
+        ],
+        "decision": null,
+        "source": "probe",
+        "provisioning": null,
+        "cleanup": null
+      },
+      {
+        "id": "R2",
+        "text": "[D1] the shared task list is empty",
+        "status": "UNKNOWN→READY (per case)",
+        "tcs": [
+          "TC-TODO-001",
+          "TC-TODO-021",
+          "TC-TODO-029"
+        ],
+        "decision": "api",
+        "source": "qc",
+        "provisioning": "prerequest/TaskPreRequest.ts emptyTaskList via fixture emptyTaskList (local only, verified 0 after the sweep)",
+        "cleanup": "none - emptying is the precondition"
+      },
+      {
+        "id": "R3",
+        "text": "[D2] tasks owned by the case, titled with its run prefix",
+        "status": "READY",
+        "tcs": [
+          "TC-TODO-001",
+          "TC-TODO-002",
+          "TC-TODO-003",
+          "TC-TODO-004",
+          "TC-TODO-005",
+          "TC-TODO-006",
+          "TC-TODO-007",
+          "TC-TODO-008",
+          "TC-TODO-009",
+          "TC-TODO-010",
+          "TC-TODO-011",
+          "TC-TODO-012",
+          "TC-TODO-013",
+          "TC-TODO-014",
+          "TC-TODO-015",
+          "TC-TODO-016",
+          "TC-TODO-017",
+          "TC-TODO-018",
+          "TC-TODO-019",
+          "TC-TODO-020",
+          "TC-TODO-021",
+          "TC-TODO-022",
+          "TC-TODO-023",
+          "TC-TODO-024",
+          "TC-TODO-025",
+          "TC-TODO-026",
+          "TC-TODO-027",
+          "TC-TODO-028",
+          "TC-TODO-029",
+          "TC-TODO-031"
+        ],
+        "decision": "ui",
+        "source": "plan",
+        "provisioning": "each case adds its tasks through the \"New task\" field",
+        "cleanup": "delete (fixture qaRun, owned prefix only, after the evidence image)"
+      },
+      {
+        "id": "R4",
+        "text": "[D3] 100- and 120-character titles",
+        "status": "READY",
+        "tcs": [
+          "TC-TODO-008",
+          "TC-TODO-009"
+        ],
+        "decision": null,
+        "source": "plan",
+        "provisioning": "helpers/test-data.ts dataItems",
+        "cleanup": null
+      }
+    ],
+    "predictedSkips": []
+  },
+  "coverage_snapshot": {
+    "measuredAt": "2026-10-13T15:31:49+00:00",
+    "weightedPct": 93.8,
+    "target": 80,
+    "targetSource": "constitution",
+    "mechanism": "soft block",
+    "verdict": "PASS",
+    "byStage": {
+      "smoke": {
+        "total": 4,
+        "full": 4,
+        "partial": 0,
+        "none": 0,
+        "weightedPct": 100.0
+      },
+      "positive": {
+        "total": 19,
+        "full": 17,
+        "partial": 0,
+        "none": 2,
+        "weightedPct": 89.5
+      },
+      "negative": {
+        "total": 9,
+        "full": 9,
+        "partial": 0,
+        "none": 0,
+        "weightedPct": 100.0
+      }
+    },
+    "tcs": {
+      "TC-TODO-001": "Fully Covered",
+      "TC-TODO-002": "Fully Covered",
+      "TC-TODO-003": "Fully Covered",
+      "TC-TODO-004": "Fully Covered",
+      "TC-TODO-005": "Fully Covered",
+      "TC-TODO-006": "Fully Covered",
+      "TC-TODO-007": "Fully Covered",
+      "TC-TODO-008": "Fully Covered",
+      "TC-TODO-009": "Fully Covered",
+      "TC-TODO-010": "Fully Covered",
+      "TC-TODO-011": "Fully Covered",
+      "TC-TODO-012": "Fully Covered",
+      "TC-TODO-013": "Fully Covered",
+      "TC-TODO-014": "Fully Covered",
+      "TC-TODO-015": "Fully Covered",
+      "TC-TODO-016": "Fully Covered",
+      "TC-TODO-017": "Fully Covered",
+      "TC-TODO-018": "Fully Covered",
+      "TC-TODO-019": "Fully Covered",
+      "TC-TODO-020": "Fully Covered",
+      "TC-TODO-021": "Fully Covered",
+      "TC-TODO-022": "Fully Covered",
+      "TC-TODO-023": "Fully Covered",
+      "TC-TODO-024": "Fully Covered",
+      "TC-TODO-025": "Fully Covered",
+      "TC-TODO-026": "Fully Covered",
+      "TC-TODO-027": "Fully Covered",
+      "TC-TODO-028": "Fully Covered",
+      "TC-TODO-029": "Fully Covered",
+      "TC-TODO-030": "Not Covered",
+      "TC-TODO-031": "Fully Covered",
+      "TC-TODO-032": "Not Covered"
+    },
+    "requirements": [
+      {
+        "id": "FR-001",
+        "short": "add a task, title up to 100",
+        "outcome": "Full",
+        "assertedBy": [
+          "TC-TODO-002",
+          "TC-TODO-008",
+          "TC-TODO-009",
+          "TC-TODO-010",
+          "TC-TODO-012"
+        ]
+      },
+      {
+        "id": "FR-002",
+        "short": "reject empty / blank title",
+        "outcome": "Full",
+        "assertedBy": [
+          "TC-TODO-003",
+          "TC-TODO-004"
+        ]
+      },
+      {
+        "id": "FR-003",
+        "short": "strip surrounding spaces",
+        "outcome": "Full",
+        "assertedBy": [
+          "TC-TODO-004",
+          "TC-TODO-005"
+        ]
+      },
+      {
+        "id": "FR-004",
+        "short": "new task not completed",
+        "outcome": "Full",
+        "assertedBy": [
+          "TC-TODO-002"
+        ]
+      },
+      {
+        "id": "FR-005",
+        "short": "all tasks, newest first, order kept",
+        "outcome": "Full",
+        "assertedBy": [
+          "TC-TODO-007",
+          "TC-TODO-011",
+          "TC-TODO-017"
+        ]
+      },
+      {
+        "id": "FR-006",
+        "short": "empty-list message",
+        "outcome": "Full",
+        "assertedBy": [
+          "TC-TODO-001",
+          "TC-TODO-021"
+        ]
+      },
+      {
+        "id": "FR-007",
+        "short": "mark as completed",
+        "outcome": "Full",
+        "assertedBy": [
+          "TC-TODO-013",
+          "TC-TODO-015"
+        ]
+      },
+      {
+        "id": "FR-008",
+        "short": "completed visibly different",
+        "outcome": "Full",
+        "assertedBy": [
+          "TC-TODO-013"
+        ]
+      },
+      {
+        "id": "FR-009",
+        "short": "completion is final",
+        "outcome": "Full",
+        "assertedBy": [
+          "TC-TODO-016"
+        ]
+      },
+      {
+        "id": "FR-010",
+        "short": "delete any task",
+        "outcome": "Full",
+        "assertedBy": [
+          "TC-TODO-018",
+          "TC-TODO-019"
+        ]
+      },
+      {
+        "id": "FR-011",
+        "short": "immediate, no confirmation, no restore",
+        "outcome": "Full",
+        "assertedBy": [
+          "TC-TODO-018",
+          "TC-TODO-020"
+        ]
+      },
+      {
+        "id": "FR-012",
+        "short": "kept across reopen",
+        "outcome": "Full",
+        "assertedBy": [
+          "TC-TODO-006",
+          "TC-TODO-014",
+          "TC-TODO-020"
+        ]
+      },
+      {
+        "id": "FR-013",
+        "short": "list updates without reload",
+        "outcome": "Full",
+        "assertedBy": [
+          "TC-TODO-002",
+          "TC-TODO-031"
+        ]
+      },
+      {
+        "id": "FR-014",
+        "short": "failures reported, nothing shown as done",
+        "outcome": "Full",
+        "assertedBy": [
+          "TC-TODO-022",
+          "TC-TODO-023",
+          "TC-TODO-024",
+          "TC-TODO-025",
+          "TC-TODO-026",
+          "TC-TODO-027"
+        ]
+      },
+      {
+        "id": "FR-015",
+        "short": "no sign-in, public list",
+        "outcome": "Full",
+        "assertedBy": [
+          "TC-TODO-001"
+        ]
+      },
+      {
+        "id": "FR-016",
+        "short": "keyboard and screen reader",
+        "outcome": "Partial",
+        "assertedBy": [
+          "TC-TODO-028",
+          "TC-TODO-029"
+        ]
+      },
+      {
+        "id": "SC-001",
+        "short": "first task in under 10 s",
+        "outcome": "Missing",
+        "assertedBy": []
+      },
+      {
+        "id": "SC-002",
+        "short": "95 % first-time success",
+        "outcome": "Missing",
+        "assertedBy": []
+      },
+      {
+        "id": "SC-003",
+        "short": "result within 1 s",
+        "outcome": "Full",
+        "assertedBy": [
+          "TC-TODO-031"
+        ]
+      },
+      {
+        "id": "SC-004",
+        "short": "saved data unchanged after reopen",
+        "outcome": "Full",
+        "assertedBy": [
+          "TC-TODO-006",
+          "TC-TODO-014",
+          "TC-TODO-020"
+        ]
+      },
+      {
+        "id": "SC-005",
+        "short": "keyboard and screen reader",
+        "outcome": "Partial",
+        "assertedBy": [
+          "TC-TODO-028",
+          "TC-TODO-029"
+        ]
+      }
+    ],
+    "manual": {
+      "total": 2,
+      "high": 0,
+      "medium": 2,
+      "low": 0
+    },
+    "delta": {
+      "against": null,
+      "pctChange": null,
+      "improved": [],
+      "regressed": [],
+      "added": [],
+      "removed": []
+    }
+  },
+  "timeouts": {
+    "playwright_version": "1.64.0",
+    "feature_gates": {
+      "tags_object": true,
+      "last_failed": true,
+      "native_step_timeout": true
+    },
+    "initial": {
+      "test_default_ms": 90000,
+      "test_long_ms": 180000,
+      "expect_ms": 10000,
+      "action_ms": 15000,
+      "navigation_ms": 30000,
+      "hook_ms": 60000,
+      "step_default_ms": 30000,
+      "step_long_ms": 120000,
+      "operations": {},
+      "watchdog_grace_ms": 60000
+    },
+    "events": [],
+    "adjusted": [],
+    "probe": "NOT_RUN",
+    "calibration": "done"
+  },
+  "deviations": [
+    "Node.js 20.20.2 (past end of life) used instead of Node 24 LTS: the Node 24 install on the machine lost node.exe; approved by the QC for this run.",
+    "Serial run-plan groups use describe mode \"default\" instead of \"serial\": the cases are independent (each owns its tasks), only the global list is shared; --workers 1 per group command gives the isolation, and \"serial\" mode would skip every remaining case after one failure (QC-13: scope stays visible).",
+    "The \"Loading tasks…\" step is made observable by holding the list request in the page object until the indicator is asserted (the local service answers faster than the indicator can be seen); the product is unchanged.",
+    "Live progress was reported per run-group command (each command run in the foreground), not per poll; the watchdog did not need to act (no step exceeded its deadline).",
+    "No Testing/qa-manifest.json exists: paths resolved by the skill defaults and recorded once here.",
+    "The automation root held a package.json and node_modules created at 17:39 by an unknown source; package.json was overwritten by this run without being read first (see the final chat report).",
+    "Security software on the machine removed axe-core files (axe.js, dist/index.js) at about 17:44; the packages were reinstalled before the run."
+  ],
+  "stages": {
+    "smoke": {
+      "total": 4,
+      "passed": 4,
+      "failed": 0,
+      "incomplete": 0,
+      "skipped": 0,
+      "not_run": 0
+    },
+    "positive": {
+      "total": 17,
+      "passed": 17,
+      "failed": 0,
+      "incomplete": 0,
+      "skipped": 0,
+      "not_run": 0
+    },
+    "negative": {
+      "total": 9,
+      "passed": 9,
+      "failed": 0,
+      "incomplete": 0,
+      "skipped": 0,
+      "not_run": 0
+    }
+  },
+  "smoke_gate": {
+    "fail_pct": 0.0,
+    "verdict": "passed",
+    "action_taken": "proceed to positive and negative",
+    "excluded_unverified_assumption": 0,
+    "cycles": 0
+  },
+  "totals": {
+    "total": 30,
+    "passed": 30,
+    "failed": 0,
+    "incomplete": 0,
+    "skipped": 0,
+    "not_run": 0
+  },
+  "variant_totals": {
+    "passed": 30,
+    "failed": 0,
+    "skipped": 0,
+    "not_run": 0,
+    "partial": 0
+  },
+  "merged": {
+    "stages": [
+      {
+        "name": "smoke",
+        "group": "serial-empty-list",
+        "attempt": 1,
+        "project": "chromium",
+        "json_path": "reports/001-todo-list/artifacts/stages/smoke-serial-empty-list.json",
+        "started_at": "2026-10-13T15:35:51Z",
+        "finished_at": "2026-10-13T15:36:01Z",
+        "source": "json"
+      },
+      {
+        "name": "smoke",
+        "group": "serial-task-list",
+        "attempt": 1,
+        "project": "chromium",
+        "json_path": "reports/001-todo-list/artifacts/stages/smoke-serial-task-list.json",
+        "started_at": "2026-10-13T15:36:01Z",
+        "finished_at": "2026-10-13T15:36:16Z",
+        "source": "json"
+      },
+      {
+        "name": "positive",
+        "group": "serial-empty-list",
+        "attempt": 1,
+        "project": "chromium",
+        "json_path": "reports/001-todo-list/artifacts/stages/positive-serial-empty-list.json",
+        "started_at": "2026-10-13T15:36:23Z",
+        "finished_at": "2026-10-13T15:36:48Z",
+        "source": "json"
+      },
+      {
+        "name": "positive",
+        "group": "serial-task-list",
+        "attempt": 1,
+        "project": "chromium",
+        "json_path": "reports/001-todo-list/artifacts/stages/positive-serial-task-list.json",
+        "started_at": "2026-10-13T15:36:48Z",
+        "finished_at": "2026-10-13T15:37:38Z",
+        "source": "json"
+      },
+      {
+        "name": "negative",
+        "group": "parallel",
+        "attempt": 1,
+        "project": "chromium",
+        "json_path": "reports/001-todo-list/artifacts/stages/negative-parallel.json",
+        "started_at": "2026-10-13T15:37:44Z",
+        "finished_at": "2026-10-13T15:37:53Z",
+        "source": "json"
+      },
+      {
+        "name": "negative",
+        "group": "serial-task-list",
+        "attempt": 1,
+        "project": "chromium",
+        "json_path": "reports/001-todo-list/artifacts/stages/negative-serial-task-list.json",
+        "started_at": "2026-10-13T15:37:54Z",
+        "finished_at": "2026-10-13T15:38:14Z",
+        "source": "json"
+      },
+      {
+        "name": "smoke",
+        "group": "serial-empty-list",
+        "attempt": 2,
+        "project": "chromium",
+        "json_path": "reports/001-todo-list/artifacts/stages/smoke-serial-empty-list-attempt2.json",
+        "started_at": "2026-10-13T15:38:38Z",
+        "finished_at": "2026-10-13T15:38:42Z",
+        "source": "json"
+      },
+      {
+        "name": "smoke",
+        "group": "serial-task-list",
+        "attempt": 2,
+        "project": "chromium",
+        "json_path": "reports/001-todo-list/artifacts/stages/smoke-serial-task-list-attempt2.json",
+        "started_at": "2026-10-13T15:38:43Z",
+        "finished_at": "2026-10-13T15:39:24Z",
+        "source": "json"
+      },
+      {
+        "name": "positive",
+        "group": "serial-empty-list",
+        "attempt": 2,
+        "project": "chromium",
+        "json_path": "reports/001-todo-list/artifacts/stages/positive-serial-empty-list-attempt2.json",
+        "started_at": "2026-10-13T15:39:24Z",
+        "finished_at": "2026-10-13T15:39:34Z",
+        "source": "json"
+      },
+      {
+        "name": "positive",
+        "group": "serial-task-list",
+        "attempt": 2,
+        "project": "chromium",
+        "json_path": "reports/001-todo-list/artifacts/stages/positive-serial-task-list-attempt2.json",
+        "started_at": "2026-10-13T15:39:34Z",
+        "finished_at": "2026-10-13T15:40:18Z",
+        "source": "json"
+      },
+      {
+        "name": "negative",
+        "group": "parallel",
+        "attempt": 2,
+        "project": "chromium",
+        "json_path": "reports/001-todo-list/artifacts/stages/negative-parallel-attempt2.json",
+        "started_at": "2026-10-13T15:40:19Z",
+        "finished_at": "2026-10-13T15:40:28Z",
+        "source": "json"
+      },
+      {
+        "name": "negative",
+        "group": "serial-task-list",
+        "attempt": 2,
+        "project": "chromium",
+        "json_path": "reports/001-todo-list/artifacts/stages/negative-serial-task-list-attempt2.json",
+        "started_at": "2026-10-13T15:40:29Z",
+        "finished_at": "2026-10-13T15:40:49Z",
+        "source": "json"
+      }
+    ],
+    "executions": [
+      {
+        "variant_key": "Tasks_Tests/01-add-and-view.spec.ts::FR-006, FR-015, US1-AS1: the empty list — run group serial:empty-list › [TC-TODO-001] Opening the application with no tasks shows \"No tasks yet.\" and the \"New task\" field, without sign-in::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-001"
+        ],
+        "title": "[TC-TODO-001] Opening the application with no tasks shows \"No tasks yet.\" and the \"New task\" field, without sign-in",
+        "tags": [
+          "@positive",
+          "@smoke",
+          "@run:serial-empty-list"
+        ],
+        "file": "Tasks_Tests/01-add-and-view.spec.ts",
+        "project": "chromium",
+        "stage": "smoke",
+        "group": "serial:empty-list",
+        "attempt": 1,
+        "status": "PASS",
+        "duration_ms": 3157,
+        "error": null,
+        "attachments": []
+      },
+      {
+        "variant_key": "Tasks_Tests/01-add-and-view.spec.ts::FR-001, FR-003, FR-004, FR-005, FR-012, FR-013, US1-AS2, US1-AS4 … US1-AS8: add and view — run group serial:task-list › [TC-TODO-002] Adding \"Buy milk\" shows it at the top as not completed and clears the field::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-002"
+        ],
+        "title": "[TC-TODO-002] Adding \"Buy milk\" shows it at the top as not completed and clears the field",
+        "tags": [
+          "@positive",
+          "@smoke",
+          "@run:serial-task-list"
+        ],
+        "file": "Tasks_Tests/01-add-and-view.spec.ts",
+        "project": "chromium",
+        "stage": "smoke",
+        "group": "serial:task-list",
+        "attempt": 1,
+        "status": "PASS",
+        "duration_ms": 2930,
+        "error": null,
+        "attachments": []
+      },
+      {
+        "variant_key": "Tasks_Tests/02-complete.spec.ts::FR-005, FR-007, FR-008, FR-009, FR-012, US2-AS1 … US2-AS5: mark a task as completed — run group serial:task-list › [TC-TODO-013] Marking \"Buy milk\" as completed shows it as \"Completed\", visibly different from open tasks::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-013"
+        ],
+        "title": "[TC-TODO-013] Marking \"Buy milk\" as completed shows it as \"Completed\", visibly different from open tasks",
+        "tags": [
+          "@positive",
+          "@smoke",
+          "@run:serial-task-list"
+        ],
+        "file": "Tasks_Tests/02-complete.spec.ts",
+        "project": "chromium",
+        "stage": "smoke",
+        "group": "serial:task-list",
+        "attempt": 1,
+        "status": "PASS",
+        "duration_ms": 3285,
+        "error": null,
+        "attachments": []
+      },
+      {
+        "variant_key": "Tasks_Tests/03-delete.spec.ts::FR-010, FR-011, US3-AS1 … US3-AS3: delete a task — run group serial:task-list › [TC-TODO-018] Deleting \"Buy milk\" removes it at once with no confirmation, and the other task remains::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-018"
+        ],
+        "title": "[TC-TODO-018] Deleting \"Buy milk\" removes it at once with no confirmation, and the other task remains",
+        "tags": [
+          "@positive",
+          "@smoke",
+          "@run:serial-task-list"
+        ],
+        "file": "Tasks_Tests/03-delete.spec.ts",
+        "project": "chromium",
+        "stage": "smoke",
+        "group": "serial:task-list",
+        "attempt": 1,
+        "status": "PASS",
+        "duration_ms": 2996,
+        "error": null,
+        "attachments": []
+      },
+      {
+        "variant_key": "Tasks_Tests/03-delete.spec.ts::FR-006, US3-AS4: deleting the only task — run group serial:empty-list › [TC-TODO-021] Deleting the only task shows \"No tasks yet.\"::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-021"
+        ],
+        "title": "[TC-TODO-021] Deleting the only task shows \"No tasks yet.\"",
+        "tags": [
+          "@positive",
+          "@run:serial-empty-list"
+        ],
+        "file": "Tasks_Tests/03-delete.spec.ts",
+        "project": "chromium",
+        "stage": "positive",
+        "group": "serial:empty-list",
+        "attempt": 1,
+        "status": "PASS",
+        "duration_ms": 2702,
+        "error": null,
+        "attachments": []
+      },
+      {
+        "variant_key": "Tasks_Tests/04-failures-keyboard-access.spec.ts::FR-016, SC-005: automated accessibility scan (WCAG 2.2 AA) — run group serial:empty-list › [TC-TODO-029] The page has no critical or serious accessibility violations when empty, filled and showing an error::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-029"
+        ],
+        "title": "[TC-TODO-029] The page has no critical or serious accessibility violations when empty, filled and showing an error",
+        "tags": [
+          "@positive",
+          "@run:serial-empty-list"
+        ],
+        "file": "Tasks_Tests/04-failures-keyboard-access.spec.ts",
+        "project": "chromium",
+        "stage": "positive",
+        "group": "serial:empty-list",
+        "attempt": 1,
+        "status": "PASS",
+        "duration_ms": 5148,
+        "error": null,
+        "attachments": [
+          "console-errors.txt"
+        ]
+      },
+      {
+        "variant_key": "Tasks_Tests/01-add-and-view.spec.ts::FR-001, FR-003, FR-004, FR-005, FR-012, FR-013, US1-AS2, US1-AS4 … US1-AS8: add and view — run group serial:task-list › [TC-TODO-005] A title typed with spaces before and after is shown without them::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-005"
+        ],
+        "title": "[TC-TODO-005] A title typed with spaces before and after is shown without them",
+        "tags": [
+          "@positive",
+          "@run:serial-task-list"
+        ],
+        "file": "Tasks_Tests/01-add-and-view.spec.ts",
+        "project": "chromium",
+        "stage": "positive",
+        "group": "serial:task-list",
+        "attempt": 1,
+        "status": "PASS",
+        "duration_ms": 3599,
+        "error": null,
+        "attachments": []
+      },
+      {
+        "variant_key": "Tasks_Tests/01-add-and-view.spec.ts::FR-001, FR-003, FR-004, FR-005, FR-012, FR-013, US1-AS2, US1-AS4 … US1-AS8: add and view — run group serial:task-list › [TC-TODO-006] Tasks added are shown with the same titles and states after reopening the application::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-006"
+        ],
+        "title": "[TC-TODO-006] Tasks added are shown with the same titles and states after reopening the application",
+        "tags": [
+          "@positive",
+          "@run:serial-task-list"
+        ],
+        "file": "Tasks_Tests/01-add-and-view.spec.ts",
+        "project": "chromium",
+        "stage": "positive",
+        "group": "serial:task-list",
+        "attempt": 1,
+        "status": "PASS",
+        "duration_ms": 3096,
+        "error": null,
+        "attachments": []
+      },
+      {
+        "variant_key": "Tasks_Tests/01-add-and-view.spec.ts::FR-001, FR-003, FR-004, FR-005, FR-012, FR-013, US1-AS2, US1-AS4 … US1-AS8: add and view — run group serial:task-list › [TC-TODO-007] Every task shows its title and whether it is completed::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-007"
+        ],
+        "title": "[TC-TODO-007] Every task shows its title and whether it is completed",
+        "tags": [
+          "@positive",
+          "@run:serial-task-list"
+        ],
+        "file": "Tasks_Tests/01-add-and-view.spec.ts",
+        "project": "chromium",
+        "stage": "positive",
+        "group": "serial:task-list",
+        "attempt": 1,
+        "status": "PASS",
+        "duration_ms": 2936,
+        "error": null,
+        "attachments": []
+      },
+      {
+        "variant_key": "Tasks_Tests/01-add-and-view.spec.ts::FR-001, FR-003, FR-004, FR-005, FR-012, FR-013, US1-AS2, US1-AS4 … US1-AS8: add and view — run group serial:task-list › [TC-TODO-008] Typing past 100 characters leaves exactly 100 in the field, and adding saves that title::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-008"
+        ],
+        "title": "[TC-TODO-008] Typing past 100 characters leaves exactly 100 in the field, and adding saves that title",
+        "tags": [
+          "@positive",
+          "@run:serial-task-list"
+        ],
+        "file": "Tasks_Tests/01-add-and-view.spec.ts",
+        "project": "chromium",
+        "stage": "positive",
+        "group": "serial:task-list",
+        "attempt": 1,
+        "status": "PASS",
+        "duration_ms": 1548,
+        "error": null,
+        "attachments": []
+      },
+      {
+        "variant_key": "Tasks_Tests/01-add-and-view.spec.ts::FR-001, FR-003, FR-004, FR-005, FR-012, FR-013, US1-AS2, US1-AS4 … US1-AS8: add and view — run group serial:task-list › [TC-TODO-009] Pasting 120 characters leaves the first 100 in the field, and adding saves them::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-009"
+        ],
+        "title": "[TC-TODO-009] Pasting 120 characters leaves the first 100 in the field, and adding saves them",
+        "tags": [
+          "@positive",
+          "@run:serial-task-list"
+        ],
+        "file": "Tasks_Tests/01-add-and-view.spec.ts",
+        "project": "chromium",
+        "stage": "positive",
+        "group": "serial:task-list",
+        "attempt": 1,
+        "status": "PASS",
+        "duration_ms": 1871,
+        "error": null,
+        "attachments": []
+      },
+      {
+        "variant_key": "Tasks_Tests/01-add-and-view.spec.ts::FR-001, FR-003, FR-004, FR-005, FR-012, FR-013, US1-AS2, US1-AS4 … US1-AS8: add and view — run group serial:task-list › [TC-TODO-010] Adding a title that already exists adds a second task with no warning::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-010"
+        ],
+        "title": "[TC-TODO-010] Adding a title that already exists adds a second task with no warning",
+        "tags": [
+          "@positive",
+          "@run:serial-task-list"
+        ],
+        "file": "Tasks_Tests/01-add-and-view.spec.ts",
+        "project": "chromium",
+        "stage": "positive",
+        "group": "serial:task-list",
+        "attempt": 1,
+        "status": "PASS",
+        "duration_ms": 2741,
+        "error": null,
+        "attachments": []
+      },
+      {
+        "variant_key": "Tasks_Tests/01-add-and-view.spec.ts::FR-001, FR-003, FR-004, FR-005, FR-012, FR-013, US1-AS2, US1-AS4 … US1-AS8: add and view — run group serial:task-list › [TC-TODO-011] A newly added task appears above the tasks added before it::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-011"
+        ],
+        "title": "[TC-TODO-011] A newly added task appears above the tasks added before it",
+        "tags": [
+          "@positive",
+          "@run:serial-task-list"
+        ],
+        "file": "Tasks_Tests/01-add-and-view.spec.ts",
+        "project": "chromium",
+        "stage": "positive",
+        "group": "serial:task-list",
+        "attempt": 1,
+        "status": "PASS",
+        "duration_ms": 2919,
+        "error": null,
+        "attachments": []
+      },
+      {
+        "variant_key": "Tasks_Tests/01-add-and-view.spec.ts::FR-001, FR-003, FR-004, FR-005, FR-012, FR-013, US1-AS2, US1-AS4 … US1-AS8: add and view — run group serial:task-list › [TC-TODO-012] Double-clicking \"Add\" adds exactly one task::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-012"
+        ],
+        "title": "[TC-TODO-012] Double-clicking \"Add\" adds exactly one task",
+        "tags": [
+          "@positive",
+          "@run:serial-task-list"
+        ],
+        "file": "Tasks_Tests/01-add-and-view.spec.ts",
+        "project": "chromium",
+        "stage": "positive",
+        "group": "serial:task-list",
+        "attempt": 1,
+        "status": "PASS",
+        "duration_ms": 2562,
+        "error": null,
+        "attachments": []
+      },
+      {
+        "variant_key": "Tasks_Tests/02-complete.spec.ts::FR-005, FR-007, FR-008, FR-009, FR-012, US2-AS1 … US2-AS5: mark a task as completed — run group serial:task-list › [TC-TODO-014] A completed task is still completed after reopening the application::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-014"
+        ],
+        "title": "[TC-TODO-014] A completed task is still completed after reopening the application",
+        "tags": [
+          "@positive",
+          "@run:serial-task-list"
+        ],
+        "file": "Tasks_Tests/02-complete.spec.ts",
+        "project": "chromium",
+        "stage": "positive",
+        "group": "serial:task-list",
+        "attempt": 1,
+        "status": "PASS",
+        "duration_ms": 3728,
+        "error": null,
+        "attachments": []
+      },
+      {
+        "variant_key": "Tasks_Tests/02-complete.spec.ts::FR-005, FR-007, FR-008, FR-009, FR-012, US2-AS1 … US2-AS5: mark a task as completed — run group serial:task-list › [TC-TODO-015] Completing one task leaves another task not completed::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-015"
+        ],
+        "title": "[TC-TODO-015] Completing one task leaves another task not completed",
+        "tags": [
+          "@positive",
+          "@run:serial-task-list"
+        ],
+        "file": "Tasks_Tests/02-complete.spec.ts",
+        "project": "chromium",
+        "stage": "positive",
+        "group": "serial:task-list",
+        "attempt": 1,
+        "status": "PASS",
+        "duration_ms": 4973,
+        "error": null,
+        "attachments": []
+      },
+      {
+        "variant_key": "Tasks_Tests/02-complete.spec.ts::FR-005, FR-007, FR-008, FR-009, FR-012, US2-AS1 … US2-AS5: mark a task as completed — run group serial:task-list › [TC-TODO-017] Completing a task does not change the order of the list::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-017"
+        ],
+        "title": "[TC-TODO-017] Completing a task does not change the order of the list",
+        "tags": [
+          "@positive",
+          "@run:serial-task-list"
+        ],
+        "file": "Tasks_Tests/02-complete.spec.ts",
+        "project": "chromium",
+        "stage": "positive",
+        "group": "serial:task-list",
+        "attempt": 1,
+        "status": "PASS",
+        "duration_ms": 4806,
+        "error": null,
+        "attachments": []
+      },
+      {
+        "variant_key": "Tasks_Tests/03-delete.spec.ts::FR-010, FR-011, US3-AS1 … US3-AS3: delete a task — run group serial:task-list › [TC-TODO-019] A completed task can be deleted::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-019"
+        ],
+        "title": "[TC-TODO-019] A completed task can be deleted",
+        "tags": [
+          "@positive",
+          "@run:serial-task-list"
+        ],
+        "file": "Tasks_Tests/03-delete.spec.ts",
+        "project": "chromium",
+        "stage": "positive",
+        "group": "serial:task-list",
+        "attempt": 1,
+        "status": "PASS",
+        "duration_ms": 2527,
+        "error": null,
+        "attachments": []
+      },
+      {
+        "variant_key": "Tasks_Tests/03-delete.spec.ts::FR-010, FR-011, US3-AS1 … US3-AS3: delete a task — run group serial:task-list › [TC-TODO-020] A deleted task is not shown after reopening, and no restore action exists::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-020"
+        ],
+        "title": "[TC-TODO-020] A deleted task is not shown after reopening, and no restore action exists",
+        "tags": [
+          "@positive",
+          "@run:serial-task-list"
+        ],
+        "file": "Tasks_Tests/03-delete.spec.ts",
+        "project": "chromium",
+        "stage": "positive",
+        "group": "serial:task-list",
+        "attempt": 1,
+        "status": "PASS",
+        "duration_ms": 2817,
+        "error": null,
+        "attachments": []
+      },
+      {
+        "variant_key": "Tasks_Tests/04-failures-keyboard-access.spec.ts::FR-013, FR-016, SC-003, SC-005: keyboard and timing — run group serial:task-list › [TC-TODO-028] Adding, completing and deleting a task works with the keyboard only::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-028"
+        ],
+        "title": "[TC-TODO-028] Adding, completing and deleting a task works with the keyboard only",
+        "tags": [
+          "@positive",
+          "@run:serial-task-list"
+        ],
+        "file": "Tasks_Tests/04-failures-keyboard-access.spec.ts",
+        "project": "chromium",
+        "stage": "positive",
+        "group": "serial:task-list",
+        "attempt": 1,
+        "status": "PASS",
+        "duration_ms": 2209,
+        "error": null,
+        "attachments": []
+      },
+      {
+        "variant_key": "Tasks_Tests/04-failures-keyboard-access.spec.ts::FR-013, FR-016, SC-003, SC-005: keyboard and timing — run group serial:task-list › [TC-TODO-031] After add, complete and delete, the list shows the result within 1 second::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-031"
+        ],
+        "title": "[TC-TODO-031] After add, complete and delete, the list shows the result within 1 second",
+        "tags": [
+          "@positive",
+          "@run:serial-task-list"
+        ],
+        "file": "Tasks_Tests/04-failures-keyboard-access.spec.ts",
+        "project": "chromium",
+        "stage": "positive",
+        "group": "serial:task-list",
+        "attempt": 1,
+        "status": "PASS",
+        "duration_ms": 1635,
+        "error": null,
+        "attachments": []
+      },
+      {
+        "variant_key": "Tasks_Tests/01-add-and-view.spec.ts::FR-002, FR-003, US1-AS3: an empty or blank title is rejected — run group parallel › [TC-TODO-003] Pressing \"Add\" with an empty title shows \"Enter a title for the task.\" and adds nothing::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-003"
+        ],
+        "title": "[TC-TODO-003] Pressing \"Add\" with an empty title shows \"Enter a title for the task.\" and adds nothing",
+        "tags": [
+          "@negative",
+          "@run:parallel"
+        ],
+        "file": "Tasks_Tests/01-add-and-view.spec.ts",
+        "project": "chromium",
+        "stage": "negative",
+        "group": "parallel",
+        "attempt": 1,
+        "status": "PASS",
+        "duration_ms": 2973,
+        "error": null,
+        "attachments": []
+      },
+      {
+        "variant_key": "Tasks_Tests/01-add-and-view.spec.ts::FR-002, FR-003, US1-AS3: an empty or blank title is rejected — run group parallel › [TC-TODO-004] A title of only spaces shows \"Enter a title for the task.\" and adds nothing::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-004"
+        ],
+        "title": "[TC-TODO-004] A title of only spaces shows \"Enter a title for the task.\" and adds nothing",
+        "tags": [
+          "@negative",
+          "@run:parallel"
+        ],
+        "file": "Tasks_Tests/01-add-and-view.spec.ts",
+        "project": "chromium",
+        "stage": "negative",
+        "group": "parallel",
+        "attempt": 1,
+        "status": "PASS",
+        "duration_ms": 2923,
+        "error": null,
+        "attachments": []
+      },
+      {
+        "variant_key": "Tasks_Tests/04-failures-keyboard-access.spec.ts::FR-014: failed add and failed load — run group parallel › [TC-TODO-022] When the service cannot be reached, adding shows \"The task was not added. Try again.\" and no task appears::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-022"
+        ],
+        "title": "[TC-TODO-022] When the service cannot be reached, adding shows \"The task was not added. Try again.\" and no task appears",
+        "tags": [
+          "@negative",
+          "@run:parallel"
+        ],
+        "file": "Tasks_Tests/04-failures-keyboard-access.spec.ts",
+        "project": "chromium",
+        "stage": "negative",
+        "group": "parallel",
+        "attempt": 1,
+        "status": "PASS",
+        "duration_ms": 3196,
+        "error": null,
+        "attachments": [
+          "console-errors.txt"
+        ]
+      },
+      {
+        "variant_key": "Tasks_Tests/04-failures-keyboard-access.spec.ts::FR-014: failed add and failed load — run group parallel › [TC-TODO-025] When the list cannot be loaded, \"The tasks could not be loaded. Try again.\" is shown and \"Try again\" loads it::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-025"
+        ],
+        "title": "[TC-TODO-025] When the list cannot be loaded, \"The tasks could not be loaded. Try again.\" is shown and \"Try again\" loads it",
+        "tags": [
+          "@negative",
+          "@run:parallel"
+        ],
+        "file": "Tasks_Tests/04-failures-keyboard-access.spec.ts",
+        "project": "chromium",
+        "stage": "negative",
+        "group": "parallel",
+        "attempt": 1,
+        "status": "PASS",
+        "duration_ms": 2037,
+        "error": null,
+        "attachments": [
+          "console-errors.txt"
+        ]
+      },
+      {
+        "variant_key": "Tasks_Tests/02-complete.spec.ts::FR-005, FR-007, FR-008, FR-009, FR-012, US2-AS1 … US2-AS5: mark a task as completed — run group serial:task-list › [TC-TODO-016] A completed task offers no action to mark it as not completed::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-016"
+        ],
+        "title": "[TC-TODO-016] A completed task offers no action to mark it as not completed",
+        "tags": [
+          "@negative",
+          "@run:serial-task-list"
+        ],
+        "file": "Tasks_Tests/02-complete.spec.ts",
+        "project": "chromium",
+        "stage": "negative",
+        "group": "serial:task-list",
+        "attempt": 1,
+        "status": "PASS",
+        "duration_ms": 3733,
+        "error": null,
+        "attachments": []
+      },
+      {
+        "variant_key": "Tasks_Tests/04-failures-keyboard-access.spec.ts::FR-014, edge case \"task already deleted\": failed changes — run group serial:task-list › [TC-TODO-023] When the service cannot be reached, completing shows \"The task was not marked as completed. Try again.\" and the task stays not completed::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-023"
+        ],
+        "title": "[TC-TODO-023] When the service cannot be reached, completing shows \"The task was not marked as completed. Try again.\" and the task stays not completed",
+        "tags": [
+          "@negative",
+          "@run:serial-task-list"
+        ],
+        "file": "Tasks_Tests/04-failures-keyboard-access.spec.ts",
+        "project": "chromium",
+        "stage": "negative",
+        "group": "serial:task-list",
+        "attempt": 1,
+        "status": "PASS",
+        "duration_ms": 3008,
+        "error": null,
+        "attachments": [
+          "console-errors.txt"
+        ]
+      },
+      {
+        "variant_key": "Tasks_Tests/04-failures-keyboard-access.spec.ts::FR-014, edge case \"task already deleted\": failed changes — run group serial:task-list › [TC-TODO-024] When the service cannot be reached, deleting shows \"The task was not deleted. Try again.\" and the task stays::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-024"
+        ],
+        "title": "[TC-TODO-024] When the service cannot be reached, deleting shows \"The task was not deleted. Try again.\" and the task stays",
+        "tags": [
+          "@negative",
+          "@run:serial-task-list"
+        ],
+        "file": "Tasks_Tests/04-failures-keyboard-access.spec.ts",
+        "project": "chromium",
+        "stage": "negative",
+        "group": "serial:task-list",
+        "attempt": 1,
+        "status": "PASS",
+        "duration_ms": 3161,
+        "error": null,
+        "attachments": [
+          "console-errors.txt"
+        ]
+      },
+      {
+        "variant_key": "Tasks_Tests/04-failures-keyboard-access.spec.ts::FR-014, edge case \"task already deleted\": failed changes — run group serial:task-list › [TC-TODO-026] Completing a task someone else deleted shows \"This task no longer exists.\" and removes it::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-026"
+        ],
+        "title": "[TC-TODO-026] Completing a task someone else deleted shows \"This task no longer exists.\" and removes it",
+        "tags": [
+          "@negative",
+          "@run:serial-task-list"
+        ],
+        "file": "Tasks_Tests/04-failures-keyboard-access.spec.ts",
+        "project": "chromium",
+        "stage": "negative",
+        "group": "serial:task-list",
+        "attempt": 1,
+        "status": "PASS",
+        "duration_ms": 3267,
+        "error": null,
+        "attachments": [
+          "console-errors.txt"
+        ]
+      },
+      {
+        "variant_key": "Tasks_Tests/04-failures-keyboard-access.spec.ts::FR-014, edge case \"task already deleted\": failed changes — run group serial:task-list › [TC-TODO-027] Deleting a task someone else deleted shows \"This task no longer exists.\" and removes it::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-027"
+        ],
+        "title": "[TC-TODO-027] Deleting a task someone else deleted shows \"This task no longer exists.\" and removes it",
+        "tags": [
+          "@negative",
+          "@run:serial-task-list"
+        ],
+        "file": "Tasks_Tests/04-failures-keyboard-access.spec.ts",
+        "project": "chromium",
+        "stage": "negative",
+        "group": "serial:task-list",
+        "attempt": 1,
+        "status": "PASS",
+        "duration_ms": 2837,
+        "error": null,
+        "attachments": [
+          "console-errors.txt"
+        ]
+      },
+      {
+        "variant_key": "Tasks_Tests/01-add-and-view.spec.ts::FR-006, FR-015, US1-AS1: the empty list — run group serial:empty-list › [TC-TODO-001] Opening the application with no tasks shows \"No tasks yet.\" and the \"New task\" field, without sign-in::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-001"
+        ],
+        "title": "[TC-TODO-001] Opening the application with no tasks shows \"No tasks yet.\" and the \"New task\" field, without sign-in",
+        "tags": [
+          "@positive",
+          "@smoke",
+          "@run:serial-empty-list"
+        ],
+        "file": "Tasks_Tests/01-add-and-view.spec.ts",
+        "project": "chromium",
+        "stage": "smoke",
+        "group": "serial:empty-list",
+        "attempt": 2,
+        "status": "PASS",
+        "duration_ms": 1086,
+        "error": null,
+        "attachments": []
+      },
+      {
+        "variant_key": "Tasks_Tests/01-add-and-view.spec.ts::FR-001, FR-003, FR-004, FR-005, FR-012, FR-013, US1-AS2, US1-AS4 … US1-AS8: add and view — run group serial:task-list › [TC-TODO-002] Adding \"Buy milk\" shows it at the top as not completed and clears the field::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-002"
+        ],
+        "title": "[TC-TODO-002] Adding \"Buy milk\" shows it at the top as not completed and clears the field",
+        "tags": [
+          "@positive",
+          "@smoke",
+          "@run:serial-task-list"
+        ],
+        "file": "Tasks_Tests/01-add-and-view.spec.ts",
+        "project": "chromium",
+        "stage": "smoke",
+        "group": "serial:task-list",
+        "attempt": 2,
+        "status": "PASS",
+        "duration_ms": 31002,
+        "error": null,
+        "attachments": []
+      },
+      {
+        "variant_key": "Tasks_Tests/02-complete.spec.ts::FR-005, FR-007, FR-008, FR-009, FR-012, US2-AS1 … US2-AS5: mark a task as completed — run group serial:task-list › [TC-TODO-013] Marking \"Buy milk\" as completed shows it as \"Completed\", visibly different from open tasks::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-013"
+        ],
+        "title": "[TC-TODO-013] Marking \"Buy milk\" as completed shows it as \"Completed\", visibly different from open tasks",
+        "tags": [
+          "@positive",
+          "@smoke",
+          "@run:serial-task-list"
+        ],
+        "file": "Tasks_Tests/02-complete.spec.ts",
+        "project": "chromium",
+        "stage": "smoke",
+        "group": "serial:task-list",
+        "attempt": 2,
+        "status": "PASS",
+        "duration_ms": 3680,
+        "error": null,
+        "attachments": []
+      },
+      {
+        "variant_key": "Tasks_Tests/03-delete.spec.ts::FR-010, FR-011, US3-AS1 … US3-AS3: delete a task — run group serial:task-list › [TC-TODO-018] Deleting \"Buy milk\" removes it at once with no confirmation, and the other task remains::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-018"
+        ],
+        "title": "[TC-TODO-018] Deleting \"Buy milk\" removes it at once with no confirmation, and the other task remains",
+        "tags": [
+          "@positive",
+          "@smoke",
+          "@run:serial-task-list"
+        ],
+        "file": "Tasks_Tests/03-delete.spec.ts",
+        "project": "chromium",
+        "stage": "smoke",
+        "group": "serial:task-list",
+        "attempt": 2,
+        "status": "PASS",
+        "duration_ms": 2712,
+        "error": null,
+        "attachments": []
+      },
+      {
+        "variant_key": "Tasks_Tests/03-delete.spec.ts::FR-006, US3-AS4: deleting the only task — run group serial:empty-list › [TC-TODO-021] Deleting the only task shows \"No tasks yet.\"::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-021"
+        ],
+        "title": "[TC-TODO-021] Deleting the only task shows \"No tasks yet.\"",
+        "tags": [
+          "@positive",
+          "@run:serial-empty-list"
+        ],
+        "file": "Tasks_Tests/03-delete.spec.ts",
+        "project": "chromium",
+        "stage": "positive",
+        "group": "serial:empty-list",
+        "attempt": 2,
+        "status": "PASS",
+        "duration_ms": 1649,
+        "error": null,
+        "attachments": []
+      },
+      {
+        "variant_key": "Tasks_Tests/04-failures-keyboard-access.spec.ts::FR-016, SC-005: automated accessibility scan (WCAG 2.2 AA) — run group serial:empty-list › [TC-TODO-029] The page has no critical or serious accessibility violations when empty, filled and showing an error::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-029"
+        ],
+        "title": "[TC-TODO-029] The page has no critical or serious accessibility violations when empty, filled and showing an error",
+        "tags": [
+          "@positive",
+          "@run:serial-empty-list"
+        ],
+        "file": "Tasks_Tests/04-failures-keyboard-access.spec.ts",
+        "project": "chromium",
+        "stage": "positive",
+        "group": "serial:empty-list",
+        "attempt": 2,
+        "status": "PASS",
+        "duration_ms": 4185,
+        "error": null,
+        "attachments": [
+          "console-errors.txt"
+        ]
+      },
+      {
+        "variant_key": "Tasks_Tests/01-add-and-view.spec.ts::FR-001, FR-003, FR-004, FR-005, FR-012, FR-013, US1-AS2, US1-AS4 … US1-AS8: add and view — run group serial:task-list › [TC-TODO-005] A title typed with spaces before and after is shown without them::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-005"
+        ],
+        "title": "[TC-TODO-005] A title typed with spaces before and after is shown without them",
+        "tags": [
+          "@positive",
+          "@run:serial-task-list"
+        ],
+        "file": "Tasks_Tests/01-add-and-view.spec.ts",
+        "project": "chromium",
+        "stage": "positive",
+        "group": "serial:task-list",
+        "attempt": 2,
+        "status": "PASS",
+        "duration_ms": 3051,
+        "error": null,
+        "attachments": []
+      },
+      {
+        "variant_key": "Tasks_Tests/01-add-and-view.spec.ts::FR-001, FR-003, FR-004, FR-005, FR-012, FR-013, US1-AS2, US1-AS4 … US1-AS8: add and view — run group serial:task-list › [TC-TODO-006] Tasks added are shown with the same titles and states after reopening the application::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-006"
+        ],
+        "title": "[TC-TODO-006] Tasks added are shown with the same titles and states after reopening the application",
+        "tags": [
+          "@positive",
+          "@run:serial-task-list"
+        ],
+        "file": "Tasks_Tests/01-add-and-view.spec.ts",
+        "project": "chromium",
+        "stage": "positive",
+        "group": "serial:task-list",
+        "attempt": 2,
+        "status": "PASS",
+        "duration_ms": 3030,
+        "error": null,
+        "attachments": []
+      },
+      {
+        "variant_key": "Tasks_Tests/01-add-and-view.spec.ts::FR-001, FR-003, FR-004, FR-005, FR-012, FR-013, US1-AS2, US1-AS4 … US1-AS8: add and view — run group serial:task-list › [TC-TODO-007] Every task shows its title and whether it is completed::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-007"
+        ],
+        "title": "[TC-TODO-007] Every task shows its title and whether it is completed",
+        "tags": [
+          "@positive",
+          "@run:serial-task-list"
+        ],
+        "file": "Tasks_Tests/01-add-and-view.spec.ts",
+        "project": "chromium",
+        "stage": "positive",
+        "group": "serial:task-list",
+        "attempt": 2,
+        "status": "PASS",
+        "duration_ms": 3250,
+        "error": null,
+        "attachments": []
+      },
+      {
+        "variant_key": "Tasks_Tests/01-add-and-view.spec.ts::FR-001, FR-003, FR-004, FR-005, FR-012, FR-013, US1-AS2, US1-AS4 … US1-AS8: add and view — run group serial:task-list › [TC-TODO-008] Typing past 100 characters leaves exactly 100 in the field, and adding saves that title::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-008"
+        ],
+        "title": "[TC-TODO-008] Typing past 100 characters leaves exactly 100 in the field, and adding saves that title",
+        "tags": [
+          "@positive",
+          "@run:serial-task-list"
+        ],
+        "file": "Tasks_Tests/01-add-and-view.spec.ts",
+        "project": "chromium",
+        "stage": "positive",
+        "group": "serial:task-list",
+        "attempt": 2,
+        "status": "PASS",
+        "duration_ms": 1812,
+        "error": null,
+        "attachments": []
+      },
+      {
+        "variant_key": "Tasks_Tests/01-add-and-view.spec.ts::FR-001, FR-003, FR-004, FR-005, FR-012, FR-013, US1-AS2, US1-AS4 … US1-AS8: add and view — run group serial:task-list › [TC-TODO-009] Pasting 120 characters leaves the first 100 in the field, and adding saves them::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-009"
+        ],
+        "title": "[TC-TODO-009] Pasting 120 characters leaves the first 100 in the field, and adding saves them",
+        "tags": [
+          "@positive",
+          "@run:serial-task-list"
+        ],
+        "file": "Tasks_Tests/01-add-and-view.spec.ts",
+        "project": "chromium",
+        "stage": "positive",
+        "group": "serial:task-list",
+        "attempt": 2,
+        "status": "PASS",
+        "duration_ms": 1540,
+        "error": null,
+        "attachments": []
+      },
+      {
+        "variant_key": "Tasks_Tests/01-add-and-view.spec.ts::FR-001, FR-003, FR-004, FR-005, FR-012, FR-013, US1-AS2, US1-AS4 … US1-AS8: add and view — run group serial:task-list › [TC-TODO-010] Adding a title that already exists adds a second task with no warning::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-010"
+        ],
+        "title": "[TC-TODO-010] Adding a title that already exists adds a second task with no warning",
+        "tags": [
+          "@positive",
+          "@run:serial-task-list"
+        ],
+        "file": "Tasks_Tests/01-add-and-view.spec.ts",
+        "project": "chromium",
+        "stage": "positive",
+        "group": "serial:task-list",
+        "attempt": 2,
+        "status": "PASS",
+        "duration_ms": 2101,
+        "error": null,
+        "attachments": []
+      },
+      {
+        "variant_key": "Tasks_Tests/01-add-and-view.spec.ts::FR-001, FR-003, FR-004, FR-005, FR-012, FR-013, US1-AS2, US1-AS4 … US1-AS8: add and view — run group serial:task-list › [TC-TODO-011] A newly added task appears above the tasks added before it::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-011"
+        ],
+        "title": "[TC-TODO-011] A newly added task appears above the tasks added before it",
+        "tags": [
+          "@positive",
+          "@run:serial-task-list"
+        ],
+        "file": "Tasks_Tests/01-add-and-view.spec.ts",
+        "project": "chromium",
+        "stage": "positive",
+        "group": "serial:task-list",
+        "attempt": 2,
+        "status": "PASS",
+        "duration_ms": 2262,
+        "error": null,
+        "attachments": []
+      },
+      {
+        "variant_key": "Tasks_Tests/01-add-and-view.spec.ts::FR-001, FR-003, FR-004, FR-005, FR-012, FR-013, US1-AS2, US1-AS4 … US1-AS8: add and view — run group serial:task-list › [TC-TODO-012] Double-clicking \"Add\" adds exactly one task::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-012"
+        ],
+        "title": "[TC-TODO-012] Double-clicking \"Add\" adds exactly one task",
+        "tags": [
+          "@positive",
+          "@run:serial-task-list"
+        ],
+        "file": "Tasks_Tests/01-add-and-view.spec.ts",
+        "project": "chromium",
+        "stage": "positive",
+        "group": "serial:task-list",
+        "attempt": 2,
+        "status": "PASS",
+        "duration_ms": 2182,
+        "error": null,
+        "attachments": []
+      },
+      {
+        "variant_key": "Tasks_Tests/02-complete.spec.ts::FR-005, FR-007, FR-008, FR-009, FR-012, US2-AS1 … US2-AS5: mark a task as completed — run group serial:task-list › [TC-TODO-014] A completed task is still completed after reopening the application::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-014"
+        ],
+        "title": "[TC-TODO-014] A completed task is still completed after reopening the application",
+        "tags": [
+          "@positive",
+          "@run:serial-task-list"
+        ],
+        "file": "Tasks_Tests/02-complete.spec.ts",
+        "project": "chromium",
+        "stage": "positive",
+        "group": "serial:task-list",
+        "attempt": 2,
+        "status": "PASS",
+        "duration_ms": 3281,
+        "error": null,
+        "attachments": []
+      },
+      {
+        "variant_key": "Tasks_Tests/02-complete.spec.ts::FR-005, FR-007, FR-008, FR-009, FR-012, US2-AS1 … US2-AS5: mark a task as completed — run group serial:task-list › [TC-TODO-015] Completing one task leaves another task not completed::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-015"
+        ],
+        "title": "[TC-TODO-015] Completing one task leaves another task not completed",
+        "tags": [
+          "@positive",
+          "@run:serial-task-list"
+        ],
+        "file": "Tasks_Tests/02-complete.spec.ts",
+        "project": "chromium",
+        "stage": "positive",
+        "group": "serial:task-list",
+        "attempt": 2,
+        "status": "PASS",
+        "duration_ms": 3653,
+        "error": null,
+        "attachments": []
+      },
+      {
+        "variant_key": "Tasks_Tests/02-complete.spec.ts::FR-005, FR-007, FR-008, FR-009, FR-012, US2-AS1 … US2-AS5: mark a task as completed — run group serial:task-list › [TC-TODO-017] Completing a task does not change the order of the list::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-017"
+        ],
+        "title": "[TC-TODO-017] Completing a task does not change the order of the list",
+        "tags": [
+          "@positive",
+          "@run:serial-task-list"
+        ],
+        "file": "Tasks_Tests/02-complete.spec.ts",
+        "project": "chromium",
+        "stage": "positive",
+        "group": "serial:task-list",
+        "attempt": 2,
+        "status": "PASS",
+        "duration_ms": 3621,
+        "error": null,
+        "attachments": []
+      },
+      {
+        "variant_key": "Tasks_Tests/03-delete.spec.ts::FR-010, FR-011, US3-AS1 … US3-AS3: delete a task — run group serial:task-list › [TC-TODO-019] A completed task can be deleted::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-019"
+        ],
+        "title": "[TC-TODO-019] A completed task can be deleted",
+        "tags": [
+          "@positive",
+          "@run:serial-task-list"
+        ],
+        "file": "Tasks_Tests/03-delete.spec.ts",
+        "project": "chromium",
+        "stage": "positive",
+        "group": "serial:task-list",
+        "attempt": 2,
+        "status": "PASS",
+        "duration_ms": 2327,
+        "error": null,
+        "attachments": []
+      },
+      {
+        "variant_key": "Tasks_Tests/03-delete.spec.ts::FR-010, FR-011, US3-AS1 … US3-AS3: delete a task — run group serial:task-list › [TC-TODO-020] A deleted task is not shown after reopening, and no restore action exists::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-020"
+        ],
+        "title": "[TC-TODO-020] A deleted task is not shown after reopening, and no restore action exists",
+        "tags": [
+          "@positive",
+          "@run:serial-task-list"
+        ],
+        "file": "Tasks_Tests/03-delete.spec.ts",
+        "project": "chromium",
+        "stage": "positive",
+        "group": "serial:task-list",
+        "attempt": 2,
+        "status": "PASS",
+        "duration_ms": 2814,
+        "error": null,
+        "attachments": []
+      },
+      {
+        "variant_key": "Tasks_Tests/04-failures-keyboard-access.spec.ts::FR-013, FR-016, SC-003, SC-005: keyboard and timing — run group serial:task-list › [TC-TODO-028] Adding, completing and deleting a task works with the keyboard only::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-028"
+        ],
+        "title": "[TC-TODO-028] Adding, completing and deleting a task works with the keyboard only",
+        "tags": [
+          "@positive",
+          "@run:serial-task-list"
+        ],
+        "file": "Tasks_Tests/04-failures-keyboard-access.spec.ts",
+        "project": "chromium",
+        "stage": "positive",
+        "group": "serial:task-list",
+        "attempt": 2,
+        "status": "PASS",
+        "duration_ms": 2220,
+        "error": null,
+        "attachments": []
+      },
+      {
+        "variant_key": "Tasks_Tests/04-failures-keyboard-access.spec.ts::FR-013, FR-016, SC-003, SC-005: keyboard and timing — run group serial:task-list › [TC-TODO-031] After add, complete and delete, the list shows the result within 1 second::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-031"
+        ],
+        "title": "[TC-TODO-031] After add, complete and delete, the list shows the result within 1 second",
+        "tags": [
+          "@positive",
+          "@run:serial-task-list"
+        ],
+        "file": "Tasks_Tests/04-failures-keyboard-access.spec.ts",
+        "project": "chromium",
+        "stage": "positive",
+        "group": "serial:task-list",
+        "attempt": 2,
+        "status": "PASS",
+        "duration_ms": 1684,
+        "error": null,
+        "attachments": []
+      },
+      {
+        "variant_key": "Tasks_Tests/01-add-and-view.spec.ts::FR-002, FR-003, US1-AS3: an empty or blank title is rejected — run group parallel › [TC-TODO-003] Pressing \"Add\" with an empty title shows \"Enter a title for the task.\" and adds nothing::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-003"
+        ],
+        "title": "[TC-TODO-003] Pressing \"Add\" with an empty title shows \"Enter a title for the task.\" and adds nothing",
+        "tags": [
+          "@negative",
+          "@run:parallel"
+        ],
+        "file": "Tasks_Tests/01-add-and-view.spec.ts",
+        "project": "chromium",
+        "stage": "negative",
+        "group": "parallel",
+        "attempt": 2,
+        "status": "PASS",
+        "duration_ms": 2616,
+        "error": null,
+        "attachments": []
+      },
+      {
+        "variant_key": "Tasks_Tests/01-add-and-view.spec.ts::FR-002, FR-003, US1-AS3: an empty or blank title is rejected — run group parallel › [TC-TODO-004] A title of only spaces shows \"Enter a title for the task.\" and adds nothing::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-004"
+        ],
+        "title": "[TC-TODO-004] A title of only spaces shows \"Enter a title for the task.\" and adds nothing",
+        "tags": [
+          "@negative",
+          "@run:parallel"
+        ],
+        "file": "Tasks_Tests/01-add-and-view.spec.ts",
+        "project": "chromium",
+        "stage": "negative",
+        "group": "parallel",
+        "attempt": 2,
+        "status": "PASS",
+        "duration_ms": 2738,
+        "error": null,
+        "attachments": []
+      },
+      {
+        "variant_key": "Tasks_Tests/04-failures-keyboard-access.spec.ts::FR-014: failed add and failed load — run group parallel › [TC-TODO-022] When the service cannot be reached, adding shows \"The task was not added. Try again.\" and no task appears::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-022"
+        ],
+        "title": "[TC-TODO-022] When the service cannot be reached, adding shows \"The task was not added. Try again.\" and no task appears",
+        "tags": [
+          "@negative",
+          "@run:parallel"
+        ],
+        "file": "Tasks_Tests/04-failures-keyboard-access.spec.ts",
+        "project": "chromium",
+        "stage": "negative",
+        "group": "parallel",
+        "attempt": 2,
+        "status": "PASS",
+        "duration_ms": 2881,
+        "error": null,
+        "attachments": [
+          "console-errors.txt"
+        ]
+      },
+      {
+        "variant_key": "Tasks_Tests/04-failures-keyboard-access.spec.ts::FR-014: failed add and failed load — run group parallel › [TC-TODO-025] When the list cannot be loaded, \"The tasks could not be loaded. Try again.\" is shown and \"Try again\" loads it::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-025"
+        ],
+        "title": "[TC-TODO-025] When the list cannot be loaded, \"The tasks could not be loaded. Try again.\" is shown and \"Try again\" loads it",
+        "tags": [
+          "@negative",
+          "@run:parallel"
+        ],
+        "file": "Tasks_Tests/04-failures-keyboard-access.spec.ts",
+        "project": "chromium",
+        "stage": "negative",
+        "group": "parallel",
+        "attempt": 2,
+        "status": "PASS",
+        "duration_ms": 1744,
+        "error": null,
+        "attachments": [
+          "console-errors.txt"
+        ]
+      },
+      {
+        "variant_key": "Tasks_Tests/02-complete.spec.ts::FR-005, FR-007, FR-008, FR-009, FR-012, US2-AS1 … US2-AS5: mark a task as completed — run group serial:task-list › [TC-TODO-016] A completed task offers no action to mark it as not completed::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-016"
+        ],
+        "title": "[TC-TODO-016] A completed task offers no action to mark it as not completed",
+        "tags": [
+          "@negative",
+          "@run:serial-task-list"
+        ],
+        "file": "Tasks_Tests/02-complete.spec.ts",
+        "project": "chromium",
+        "stage": "negative",
+        "group": "serial:task-list",
+        "attempt": 2,
+        "status": "PASS",
+        "duration_ms": 3433,
+        "error": null,
+        "attachments": []
+      },
+      {
+        "variant_key": "Tasks_Tests/04-failures-keyboard-access.spec.ts::FR-014, edge case \"task already deleted\": failed changes — run group serial:task-list › [TC-TODO-023] When the service cannot be reached, completing shows \"The task was not marked as completed. Try again.\" and the task stays not completed::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-023"
+        ],
+        "title": "[TC-TODO-023] When the service cannot be reached, completing shows \"The task was not marked as completed. Try again.\" and the task stays not completed",
+        "tags": [
+          "@negative",
+          "@run:serial-task-list"
+        ],
+        "file": "Tasks_Tests/04-failures-keyboard-access.spec.ts",
+        "project": "chromium",
+        "stage": "negative",
+        "group": "serial:task-list",
+        "attempt": 2,
+        "status": "PASS",
+        "duration_ms": 2724,
+        "error": null,
+        "attachments": [
+          "console-errors.txt"
+        ]
+      },
+      {
+        "variant_key": "Tasks_Tests/04-failures-keyboard-access.spec.ts::FR-014, edge case \"task already deleted\": failed changes — run group serial:task-list › [TC-TODO-024] When the service cannot be reached, deleting shows \"The task was not deleted. Try again.\" and the task stays::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-024"
+        ],
+        "title": "[TC-TODO-024] When the service cannot be reached, deleting shows \"The task was not deleted. Try again.\" and the task stays",
+        "tags": [
+          "@negative",
+          "@run:serial-task-list"
+        ],
+        "file": "Tasks_Tests/04-failures-keyboard-access.spec.ts",
+        "project": "chromium",
+        "stage": "negative",
+        "group": "serial:task-list",
+        "attempt": 2,
+        "status": "PASS",
+        "duration_ms": 3124,
+        "error": null,
+        "attachments": [
+          "console-errors.txt"
+        ]
+      },
+      {
+        "variant_key": "Tasks_Tests/04-failures-keyboard-access.spec.ts::FR-014, edge case \"task already deleted\": failed changes — run group serial:task-list › [TC-TODO-026] Completing a task someone else deleted shows \"This task no longer exists.\" and removes it::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-026"
+        ],
+        "title": "[TC-TODO-026] Completing a task someone else deleted shows \"This task no longer exists.\" and removes it",
+        "tags": [
+          "@negative",
+          "@run:serial-task-list"
+        ],
+        "file": "Tasks_Tests/04-failures-keyboard-access.spec.ts",
+        "project": "chromium",
+        "stage": "negative",
+        "group": "serial:task-list",
+        "attempt": 2,
+        "status": "PASS",
+        "duration_ms": 3700,
+        "error": null,
+        "attachments": [
+          "console-errors.txt"
+        ]
+      },
+      {
+        "variant_key": "Tasks_Tests/04-failures-keyboard-access.spec.ts::FR-014, edge case \"task already deleted\": failed changes — run group serial:task-list › [TC-TODO-027] Deleting a task someone else deleted shows \"This task no longer exists.\" and removes it::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-027"
+        ],
+        "title": "[TC-TODO-027] Deleting a task someone else deleted shows \"This task no longer exists.\" and removes it",
+        "tags": [
+          "@negative",
+          "@run:serial-task-list"
+        ],
+        "file": "Tasks_Tests/04-failures-keyboard-access.spec.ts",
+        "project": "chromium",
+        "stage": "negative",
+        "group": "serial:task-list",
+        "attempt": 2,
+        "status": "PASS",
+        "duration_ms": 3412,
+        "error": null,
+        "attachments": [
+          "console-errors.txt"
+        ]
+      }
+    ],
+    "variants": [
+      {
+        "variant_key": "Tasks_Tests/01-add-and-view.spec.ts::FR-006, FR-015, US1-AS1: the empty list — run group serial:empty-list › [TC-TODO-001] Opening the application with no tasks shows \"No tasks yet.\" and the \"New task\" field, without sign-in::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-001"
+        ],
+        "project": "chromium",
+        "attempts": [
+          {
+            "attempt": 1,
+            "stage": "smoke",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-001/chromium--none--r0/attempt-1.png",
+            "failure_screenshot": null
+          },
+          {
+            "attempt": 2,
+            "stage": "smoke",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-001/chromium--none--r0/attempt-2.png",
+            "failure_screenshot": null
+          }
+        ],
+        "final_status": "PASS"
+      },
+      {
+        "variant_key": "Tasks_Tests/01-add-and-view.spec.ts::FR-001, FR-003, FR-004, FR-005, FR-012, FR-013, US1-AS2, US1-AS4 … US1-AS8: add and view — run group serial:task-list › [TC-TODO-002] Adding \"Buy milk\" shows it at the top as not completed and clears the field::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-002"
+        ],
+        "project": "chromium",
+        "attempts": [
+          {
+            "attempt": 1,
+            "stage": "smoke",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-002/chromium--none--r0/attempt-1.png",
+            "failure_screenshot": null
+          },
+          {
+            "attempt": 2,
+            "stage": "smoke",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-002/chromium--none--r0/attempt-2.png",
+            "failure_screenshot": null
+          }
+        ],
+        "final_status": "PASS"
+      },
+      {
+        "variant_key": "Tasks_Tests/02-complete.spec.ts::FR-005, FR-007, FR-008, FR-009, FR-012, US2-AS1 … US2-AS5: mark a task as completed — run group serial:task-list › [TC-TODO-013] Marking \"Buy milk\" as completed shows it as \"Completed\", visibly different from open tasks::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-013"
+        ],
+        "project": "chromium",
+        "attempts": [
+          {
+            "attempt": 1,
+            "stage": "smoke",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-013/chromium--none--r0/attempt-1.png",
+            "failure_screenshot": null
+          },
+          {
+            "attempt": 2,
+            "stage": "smoke",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-013/chromium--none--r0/attempt-2.png",
+            "failure_screenshot": null
+          }
+        ],
+        "final_status": "PASS"
+      },
+      {
+        "variant_key": "Tasks_Tests/03-delete.spec.ts::FR-010, FR-011, US3-AS1 … US3-AS3: delete a task — run group serial:task-list › [TC-TODO-018] Deleting \"Buy milk\" removes it at once with no confirmation, and the other task remains::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-018"
+        ],
+        "project": "chromium",
+        "attempts": [
+          {
+            "attempt": 1,
+            "stage": "smoke",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-018/chromium--none--r0/attempt-1.png",
+            "failure_screenshot": null
+          },
+          {
+            "attempt": 2,
+            "stage": "smoke",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-018/chromium--none--r0/attempt-2.png",
+            "failure_screenshot": null
+          }
+        ],
+        "final_status": "PASS"
+      },
+      {
+        "variant_key": "Tasks_Tests/03-delete.spec.ts::FR-006, US3-AS4: deleting the only task — run group serial:empty-list › [TC-TODO-021] Deleting the only task shows \"No tasks yet.\"::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-021"
+        ],
+        "project": "chromium",
+        "attempts": [
+          {
+            "attempt": 1,
+            "stage": "positive",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-021/chromium--none--r0/attempt-1.png",
+            "failure_screenshot": null
+          },
+          {
+            "attempt": 2,
+            "stage": "positive",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-021/chromium--none--r0/attempt-2.png",
+            "failure_screenshot": null
+          }
+        ],
+        "final_status": "PASS"
+      },
+      {
+        "variant_key": "Tasks_Tests/04-failures-keyboard-access.spec.ts::FR-016, SC-005: automated accessibility scan (WCAG 2.2 AA) — run group serial:empty-list › [TC-TODO-029] The page has no critical or serious accessibility violations when empty, filled and showing an error::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-029"
+        ],
+        "project": "chromium",
+        "attempts": [
+          {
+            "attempt": 1,
+            "stage": "positive",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-029/chromium--none--r0/attempt-1.png",
+            "failure_screenshot": null
+          },
+          {
+            "attempt": 2,
+            "stage": "positive",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-029/chromium--none--r0/attempt-2.png",
+            "failure_screenshot": null
+          }
+        ],
+        "final_status": "PASS"
+      },
+      {
+        "variant_key": "Tasks_Tests/01-add-and-view.spec.ts::FR-001, FR-003, FR-004, FR-005, FR-012, FR-013, US1-AS2, US1-AS4 … US1-AS8: add and view — run group serial:task-list › [TC-TODO-005] A title typed with spaces before and after is shown without them::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-005"
+        ],
+        "project": "chromium",
+        "attempts": [
+          {
+            "attempt": 1,
+            "stage": "positive",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-005/chromium--none--r0/attempt-1.png",
+            "failure_screenshot": null
+          },
+          {
+            "attempt": 2,
+            "stage": "positive",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-005/chromium--none--r0/attempt-2.png",
+            "failure_screenshot": null
+          }
+        ],
+        "final_status": "PASS"
+      },
+      {
+        "variant_key": "Tasks_Tests/01-add-and-view.spec.ts::FR-001, FR-003, FR-004, FR-005, FR-012, FR-013, US1-AS2, US1-AS4 … US1-AS8: add and view — run group serial:task-list › [TC-TODO-006] Tasks added are shown with the same titles and states after reopening the application::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-006"
+        ],
+        "project": "chromium",
+        "attempts": [
+          {
+            "attempt": 1,
+            "stage": "positive",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-006/chromium--none--r0/attempt-1.png",
+            "failure_screenshot": null
+          },
+          {
+            "attempt": 2,
+            "stage": "positive",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-006/chromium--none--r0/attempt-2.png",
+            "failure_screenshot": null
+          }
+        ],
+        "final_status": "PASS"
+      },
+      {
+        "variant_key": "Tasks_Tests/01-add-and-view.spec.ts::FR-001, FR-003, FR-004, FR-005, FR-012, FR-013, US1-AS2, US1-AS4 … US1-AS8: add and view — run group serial:task-list › [TC-TODO-007] Every task shows its title and whether it is completed::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-007"
+        ],
+        "project": "chromium",
+        "attempts": [
+          {
+            "attempt": 1,
+            "stage": "positive",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-007/chromium--none--r0/attempt-1.png",
+            "failure_screenshot": null
+          },
+          {
+            "attempt": 2,
+            "stage": "positive",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-007/chromium--none--r0/attempt-2.png",
+            "failure_screenshot": null
+          }
+        ],
+        "final_status": "PASS"
+      },
+      {
+        "variant_key": "Tasks_Tests/01-add-and-view.spec.ts::FR-001, FR-003, FR-004, FR-005, FR-012, FR-013, US1-AS2, US1-AS4 … US1-AS8: add and view — run group serial:task-list › [TC-TODO-008] Typing past 100 characters leaves exactly 100 in the field, and adding saves that title::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-008"
+        ],
+        "project": "chromium",
+        "attempts": [
+          {
+            "attempt": 1,
+            "stage": "positive",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-008/chromium--none--r0/attempt-1.png",
+            "failure_screenshot": null
+          },
+          {
+            "attempt": 2,
+            "stage": "positive",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-008/chromium--none--r0/attempt-2.png",
+            "failure_screenshot": null
+          }
+        ],
+        "final_status": "PASS"
+      },
+      {
+        "variant_key": "Tasks_Tests/01-add-and-view.spec.ts::FR-001, FR-003, FR-004, FR-005, FR-012, FR-013, US1-AS2, US1-AS4 … US1-AS8: add and view — run group serial:task-list › [TC-TODO-009] Pasting 120 characters leaves the first 100 in the field, and adding saves them::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-009"
+        ],
+        "project": "chromium",
+        "attempts": [
+          {
+            "attempt": 1,
+            "stage": "positive",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-009/chromium--none--r0/attempt-1.png",
+            "failure_screenshot": null
+          },
+          {
+            "attempt": 2,
+            "stage": "positive",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-009/chromium--none--r0/attempt-2.png",
+            "failure_screenshot": null
+          }
+        ],
+        "final_status": "PASS"
+      },
+      {
+        "variant_key": "Tasks_Tests/01-add-and-view.spec.ts::FR-001, FR-003, FR-004, FR-005, FR-012, FR-013, US1-AS2, US1-AS4 … US1-AS8: add and view — run group serial:task-list › [TC-TODO-010] Adding a title that already exists adds a second task with no warning::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-010"
+        ],
+        "project": "chromium",
+        "attempts": [
+          {
+            "attempt": 1,
+            "stage": "positive",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-010/chromium--none--r0/attempt-1.png",
+            "failure_screenshot": null
+          },
+          {
+            "attempt": 2,
+            "stage": "positive",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-010/chromium--none--r0/attempt-2.png",
+            "failure_screenshot": null
+          }
+        ],
+        "final_status": "PASS"
+      },
+      {
+        "variant_key": "Tasks_Tests/01-add-and-view.spec.ts::FR-001, FR-003, FR-004, FR-005, FR-012, FR-013, US1-AS2, US1-AS4 … US1-AS8: add and view — run group serial:task-list › [TC-TODO-011] A newly added task appears above the tasks added before it::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-011"
+        ],
+        "project": "chromium",
+        "attempts": [
+          {
+            "attempt": 1,
+            "stage": "positive",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-011/chromium--none--r0/attempt-1.png",
+            "failure_screenshot": null
+          },
+          {
+            "attempt": 2,
+            "stage": "positive",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-011/chromium--none--r0/attempt-2.png",
+            "failure_screenshot": null
+          }
+        ],
+        "final_status": "PASS"
+      },
+      {
+        "variant_key": "Tasks_Tests/01-add-and-view.spec.ts::FR-001, FR-003, FR-004, FR-005, FR-012, FR-013, US1-AS2, US1-AS4 … US1-AS8: add and view — run group serial:task-list › [TC-TODO-012] Double-clicking \"Add\" adds exactly one task::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-012"
+        ],
+        "project": "chromium",
+        "attempts": [
+          {
+            "attempt": 1,
+            "stage": "positive",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-012/chromium--none--r0/attempt-1.png",
+            "failure_screenshot": null
+          },
+          {
+            "attempt": 2,
+            "stage": "positive",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-012/chromium--none--r0/attempt-2.png",
+            "failure_screenshot": null
+          }
+        ],
+        "final_status": "PASS"
+      },
+      {
+        "variant_key": "Tasks_Tests/02-complete.spec.ts::FR-005, FR-007, FR-008, FR-009, FR-012, US2-AS1 … US2-AS5: mark a task as completed — run group serial:task-list › [TC-TODO-014] A completed task is still completed after reopening the application::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-014"
+        ],
+        "project": "chromium",
+        "attempts": [
+          {
+            "attempt": 1,
+            "stage": "positive",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-014/chromium--none--r0/attempt-1.png",
+            "failure_screenshot": null
+          },
+          {
+            "attempt": 2,
+            "stage": "positive",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-014/chromium--none--r0/attempt-2.png",
+            "failure_screenshot": null
+          }
+        ],
+        "final_status": "PASS"
+      },
+      {
+        "variant_key": "Tasks_Tests/02-complete.spec.ts::FR-005, FR-007, FR-008, FR-009, FR-012, US2-AS1 … US2-AS5: mark a task as completed — run group serial:task-list › [TC-TODO-015] Completing one task leaves another task not completed::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-015"
+        ],
+        "project": "chromium",
+        "attempts": [
+          {
+            "attempt": 1,
+            "stage": "positive",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-015/chromium--none--r0/attempt-1.png",
+            "failure_screenshot": null
+          },
+          {
+            "attempt": 2,
+            "stage": "positive",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-015/chromium--none--r0/attempt-2.png",
+            "failure_screenshot": null
+          }
+        ],
+        "final_status": "PASS"
+      },
+      {
+        "variant_key": "Tasks_Tests/02-complete.spec.ts::FR-005, FR-007, FR-008, FR-009, FR-012, US2-AS1 … US2-AS5: mark a task as completed — run group serial:task-list › [TC-TODO-017] Completing a task does not change the order of the list::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-017"
+        ],
+        "project": "chromium",
+        "attempts": [
+          {
+            "attempt": 1,
+            "stage": "positive",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-017/chromium--none--r0/attempt-1.png",
+            "failure_screenshot": null
+          },
+          {
+            "attempt": 2,
+            "stage": "positive",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-017/chromium--none--r0/attempt-2.png",
+            "failure_screenshot": null
+          }
+        ],
+        "final_status": "PASS"
+      },
+      {
+        "variant_key": "Tasks_Tests/03-delete.spec.ts::FR-010, FR-011, US3-AS1 … US3-AS3: delete a task — run group serial:task-list › [TC-TODO-019] A completed task can be deleted::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-019"
+        ],
+        "project": "chromium",
+        "attempts": [
+          {
+            "attempt": 1,
+            "stage": "positive",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-019/chromium--none--r0/attempt-1.png",
+            "failure_screenshot": null
+          },
+          {
+            "attempt": 2,
+            "stage": "positive",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-019/chromium--none--r0/attempt-2.png",
+            "failure_screenshot": null
+          }
+        ],
+        "final_status": "PASS"
+      },
+      {
+        "variant_key": "Tasks_Tests/03-delete.spec.ts::FR-010, FR-011, US3-AS1 … US3-AS3: delete a task — run group serial:task-list › [TC-TODO-020] A deleted task is not shown after reopening, and no restore action exists::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-020"
+        ],
+        "project": "chromium",
+        "attempts": [
+          {
+            "attempt": 1,
+            "stage": "positive",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-020/chromium--none--r0/attempt-1.png",
+            "failure_screenshot": null
+          },
+          {
+            "attempt": 2,
+            "stage": "positive",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-020/chromium--none--r0/attempt-2.png",
+            "failure_screenshot": null
+          }
+        ],
+        "final_status": "PASS"
+      },
+      {
+        "variant_key": "Tasks_Tests/04-failures-keyboard-access.spec.ts::FR-013, FR-016, SC-003, SC-005: keyboard and timing — run group serial:task-list › [TC-TODO-028] Adding, completing and deleting a task works with the keyboard only::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-028"
+        ],
+        "project": "chromium",
+        "attempts": [
+          {
+            "attempt": 1,
+            "stage": "positive",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-028/chromium--none--r0/attempt-1.png",
+            "failure_screenshot": null
+          },
+          {
+            "attempt": 2,
+            "stage": "positive",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-028/chromium--none--r0/attempt-2.png",
+            "failure_screenshot": null
+          }
+        ],
+        "final_status": "PASS"
+      },
+      {
+        "variant_key": "Tasks_Tests/04-failures-keyboard-access.spec.ts::FR-013, FR-016, SC-003, SC-005: keyboard and timing — run group serial:task-list › [TC-TODO-031] After add, complete and delete, the list shows the result within 1 second::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-031"
+        ],
+        "project": "chromium",
+        "attempts": [
+          {
+            "attempt": 1,
+            "stage": "positive",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-031/chromium--none--r0/attempt-1.png",
+            "failure_screenshot": null
+          },
+          {
+            "attempt": 2,
+            "stage": "positive",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-031/chromium--none--r0/attempt-2.png",
+            "failure_screenshot": null
+          }
+        ],
+        "final_status": "PASS"
+      },
+      {
+        "variant_key": "Tasks_Tests/01-add-and-view.spec.ts::FR-002, FR-003, US1-AS3: an empty or blank title is rejected — run group parallel › [TC-TODO-003] Pressing \"Add\" with an empty title shows \"Enter a title for the task.\" and adds nothing::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-003"
+        ],
+        "project": "chromium",
+        "attempts": [
+          {
+            "attempt": 1,
+            "stage": "negative",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-003/chromium--none--r0/attempt-1.png",
+            "failure_screenshot": null
+          },
+          {
+            "attempt": 2,
+            "stage": "negative",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-003/chromium--none--r0/attempt-2.png",
+            "failure_screenshot": null
+          }
+        ],
+        "final_status": "PASS"
+      },
+      {
+        "variant_key": "Tasks_Tests/01-add-and-view.spec.ts::FR-002, FR-003, US1-AS3: an empty or blank title is rejected — run group parallel › [TC-TODO-004] A title of only spaces shows \"Enter a title for the task.\" and adds nothing::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-004"
+        ],
+        "project": "chromium",
+        "attempts": [
+          {
+            "attempt": 1,
+            "stage": "negative",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-004/chromium--none--r0/attempt-1.png",
+            "failure_screenshot": null
+          },
+          {
+            "attempt": 2,
+            "stage": "negative",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-004/chromium--none--r0/attempt-2.png",
+            "failure_screenshot": null
+          }
+        ],
+        "final_status": "PASS"
+      },
+      {
+        "variant_key": "Tasks_Tests/04-failures-keyboard-access.spec.ts::FR-014: failed add and failed load — run group parallel › [TC-TODO-022] When the service cannot be reached, adding shows \"The task was not added. Try again.\" and no task appears::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-022"
+        ],
+        "project": "chromium",
+        "attempts": [
+          {
+            "attempt": 1,
+            "stage": "negative",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-022/chromium--none--r0/attempt-1.png",
+            "failure_screenshot": null
+          },
+          {
+            "attempt": 2,
+            "stage": "negative",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-022/chromium--none--r0/attempt-2.png",
+            "failure_screenshot": null
+          }
+        ],
+        "final_status": "PASS"
+      },
+      {
+        "variant_key": "Tasks_Tests/04-failures-keyboard-access.spec.ts::FR-014: failed add and failed load — run group parallel › [TC-TODO-025] When the list cannot be loaded, \"The tasks could not be loaded. Try again.\" is shown and \"Try again\" loads it::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-025"
+        ],
+        "project": "chromium",
+        "attempts": [
+          {
+            "attempt": 1,
+            "stage": "negative",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-025/chromium--none--r0/attempt-1.png",
+            "failure_screenshot": null
+          },
+          {
+            "attempt": 2,
+            "stage": "negative",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-025/chromium--none--r0/attempt-2.png",
+            "failure_screenshot": null
+          }
+        ],
+        "final_status": "PASS"
+      },
+      {
+        "variant_key": "Tasks_Tests/02-complete.spec.ts::FR-005, FR-007, FR-008, FR-009, FR-012, US2-AS1 … US2-AS5: mark a task as completed — run group serial:task-list › [TC-TODO-016] A completed task offers no action to mark it as not completed::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-016"
+        ],
+        "project": "chromium",
+        "attempts": [
+          {
+            "attempt": 1,
+            "stage": "negative",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-016/chromium--none--r0/attempt-1.png",
+            "failure_screenshot": null
+          },
+          {
+            "attempt": 2,
+            "stage": "negative",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-016/chromium--none--r0/attempt-2.png",
+            "failure_screenshot": null
+          }
+        ],
+        "final_status": "PASS"
+      },
+      {
+        "variant_key": "Tasks_Tests/04-failures-keyboard-access.spec.ts::FR-014, edge case \"task already deleted\": failed changes — run group serial:task-list › [TC-TODO-023] When the service cannot be reached, completing shows \"The task was not marked as completed. Try again.\" and the task stays not completed::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-023"
+        ],
+        "project": "chromium",
+        "attempts": [
+          {
+            "attempt": 1,
+            "stage": "negative",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-023/chromium--none--r0/attempt-1.png",
+            "failure_screenshot": null
+          },
+          {
+            "attempt": 2,
+            "stage": "negative",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-023/chromium--none--r0/attempt-2.png",
+            "failure_screenshot": null
+          }
+        ],
+        "final_status": "PASS"
+      },
+      {
+        "variant_key": "Tasks_Tests/04-failures-keyboard-access.spec.ts::FR-014, edge case \"task already deleted\": failed changes — run group serial:task-list › [TC-TODO-024] When the service cannot be reached, deleting shows \"The task was not deleted. Try again.\" and the task stays::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-024"
+        ],
+        "project": "chromium",
+        "attempts": [
+          {
+            "attempt": 1,
+            "stage": "negative",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-024/chromium--none--r0/attempt-1.png",
+            "failure_screenshot": null
+          },
+          {
+            "attempt": 2,
+            "stage": "negative",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-024/chromium--none--r0/attempt-2.png",
+            "failure_screenshot": null
+          }
+        ],
+        "final_status": "PASS"
+      },
+      {
+        "variant_key": "Tasks_Tests/04-failures-keyboard-access.spec.ts::FR-014, edge case \"task already deleted\": failed changes — run group serial:task-list › [TC-TODO-026] Completing a task someone else deleted shows \"This task no longer exists.\" and removes it::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-026"
+        ],
+        "project": "chromium",
+        "attempts": [
+          {
+            "attempt": 1,
+            "stage": "negative",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-026/chromium--none--r0/attempt-1.png",
+            "failure_screenshot": null
+          },
+          {
+            "attempt": 2,
+            "stage": "negative",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-026/chromium--none--r0/attempt-2.png",
+            "failure_screenshot": null
+          }
+        ],
+        "final_status": "PASS"
+      },
+      {
+        "variant_key": "Tasks_Tests/04-failures-keyboard-access.spec.ts::FR-014, edge case \"task already deleted\": failed changes — run group serial:task-list › [TC-TODO-027] Deleting a task someone else deleted shows \"This task no longer exists.\" and removes it::chromium::r0",
+        "variant_slug": "chromium--none--r0",
+        "tc_ids": [
+          "TC-TODO-027"
+        ],
+        "project": "chromium",
+        "attempts": [
+          {
+            "attempt": 1,
+            "stage": "negative",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-027/chromium--none--r0/attempt-1.png",
+            "failure_screenshot": null
+          },
+          {
+            "attempt": 2,
+            "stage": "negative",
+            "status": "PASS",
+            "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-027/chromium--none--r0/attempt-2.png",
+            "failure_screenshot": null
+          }
+        ],
+        "final_status": "PASS"
+      }
+    ],
+    "tcs": [
+      {
+        "tc_id": "TC-TODO-001",
+        "required_variants": [
+          "chromium--none--r0"
+        ],
+        "variant_slugs": [
+          "chromium--none--r0"
+        ],
+        "status": "PASS",
+        "missing_variants": [],
+        "skipped_variants": []
+      },
+      {
+        "tc_id": "TC-TODO-002",
+        "required_variants": [
+          "chromium--none--r0"
+        ],
+        "variant_slugs": [
+          "chromium--none--r0"
+        ],
+        "status": "PASS",
+        "missing_variants": [],
+        "skipped_variants": []
+      },
+      {
+        "tc_id": "TC-TODO-003",
+        "required_variants": [
+          "chromium--none--r0"
+        ],
+        "variant_slugs": [
+          "chromium--none--r0"
+        ],
+        "status": "PASS",
+        "missing_variants": [],
+        "skipped_variants": []
+      },
+      {
+        "tc_id": "TC-TODO-004",
+        "required_variants": [
+          "chromium--none--r0"
+        ],
+        "variant_slugs": [
+          "chromium--none--r0"
+        ],
+        "status": "PASS",
+        "missing_variants": [],
+        "skipped_variants": []
+      },
+      {
+        "tc_id": "TC-TODO-005",
+        "required_variants": [
+          "chromium--none--r0"
+        ],
+        "variant_slugs": [
+          "chromium--none--r0"
+        ],
+        "status": "PASS",
+        "missing_variants": [],
+        "skipped_variants": []
+      },
+      {
+        "tc_id": "TC-TODO-006",
+        "required_variants": [
+          "chromium--none--r0"
+        ],
+        "variant_slugs": [
+          "chromium--none--r0"
+        ],
+        "status": "PASS",
+        "missing_variants": [],
+        "skipped_variants": []
+      },
+      {
+        "tc_id": "TC-TODO-007",
+        "required_variants": [
+          "chromium--none--r0"
+        ],
+        "variant_slugs": [
+          "chromium--none--r0"
+        ],
+        "status": "PASS",
+        "missing_variants": [],
+        "skipped_variants": []
+      },
+      {
+        "tc_id": "TC-TODO-008",
+        "required_variants": [
+          "chromium--none--r0"
+        ],
+        "variant_slugs": [
+          "chromium--none--r0"
+        ],
+        "status": "PASS",
+        "missing_variants": [],
+        "skipped_variants": []
+      },
+      {
+        "tc_id": "TC-TODO-009",
+        "required_variants": [
+          "chromium--none--r0"
+        ],
+        "variant_slugs": [
+          "chromium--none--r0"
+        ],
+        "status": "PASS",
+        "missing_variants": [],
+        "skipped_variants": []
+      },
+      {
+        "tc_id": "TC-TODO-010",
+        "required_variants": [
+          "chromium--none--r0"
+        ],
+        "variant_slugs": [
+          "chromium--none--r0"
+        ],
+        "status": "PASS",
+        "missing_variants": [],
+        "skipped_variants": []
+      },
+      {
+        "tc_id": "TC-TODO-011",
+        "required_variants": [
+          "chromium--none--r0"
+        ],
+        "variant_slugs": [
+          "chromium--none--r0"
+        ],
+        "status": "PASS",
+        "missing_variants": [],
+        "skipped_variants": []
+      },
+      {
+        "tc_id": "TC-TODO-012",
+        "required_variants": [
+          "chromium--none--r0"
+        ],
+        "variant_slugs": [
+          "chromium--none--r0"
+        ],
+        "status": "PASS",
+        "missing_variants": [],
+        "skipped_variants": []
+      },
+      {
+        "tc_id": "TC-TODO-013",
+        "required_variants": [
+          "chromium--none--r0"
+        ],
+        "variant_slugs": [
+          "chromium--none--r0"
+        ],
+        "status": "PASS",
+        "missing_variants": [],
+        "skipped_variants": []
+      },
+      {
+        "tc_id": "TC-TODO-014",
+        "required_variants": [
+          "chromium--none--r0"
+        ],
+        "variant_slugs": [
+          "chromium--none--r0"
+        ],
+        "status": "PASS",
+        "missing_variants": [],
+        "skipped_variants": []
+      },
+      {
+        "tc_id": "TC-TODO-015",
+        "required_variants": [
+          "chromium--none--r0"
+        ],
+        "variant_slugs": [
+          "chromium--none--r0"
+        ],
+        "status": "PASS",
+        "missing_variants": [],
+        "skipped_variants": []
+      },
+      {
+        "tc_id": "TC-TODO-016",
+        "required_variants": [
+          "chromium--none--r0"
+        ],
+        "variant_slugs": [
+          "chromium--none--r0"
+        ],
+        "status": "PASS",
+        "missing_variants": [],
+        "skipped_variants": []
+      },
+      {
+        "tc_id": "TC-TODO-017",
+        "required_variants": [
+          "chromium--none--r0"
+        ],
+        "variant_slugs": [
+          "chromium--none--r0"
+        ],
+        "status": "PASS",
+        "missing_variants": [],
+        "skipped_variants": []
+      },
+      {
+        "tc_id": "TC-TODO-018",
+        "required_variants": [
+          "chromium--none--r0"
+        ],
+        "variant_slugs": [
+          "chromium--none--r0"
+        ],
+        "status": "PASS",
+        "missing_variants": [],
+        "skipped_variants": []
+      },
+      {
+        "tc_id": "TC-TODO-019",
+        "required_variants": [
+          "chromium--none--r0"
+        ],
+        "variant_slugs": [
+          "chromium--none--r0"
+        ],
+        "status": "PASS",
+        "missing_variants": [],
+        "skipped_variants": []
+      },
+      {
+        "tc_id": "TC-TODO-020",
+        "required_variants": [
+          "chromium--none--r0"
+        ],
+        "variant_slugs": [
+          "chromium--none--r0"
+        ],
+        "status": "PASS",
+        "missing_variants": [],
+        "skipped_variants": []
+      },
+      {
+        "tc_id": "TC-TODO-021",
+        "required_variants": [
+          "chromium--none--r0"
+        ],
+        "variant_slugs": [
+          "chromium--none--r0"
+        ],
+        "status": "PASS",
+        "missing_variants": [],
+        "skipped_variants": []
+      },
+      {
+        "tc_id": "TC-TODO-022",
+        "required_variants": [
+          "chromium--none--r0"
+        ],
+        "variant_slugs": [
+          "chromium--none--r0"
+        ],
+        "status": "PASS",
+        "missing_variants": [],
+        "skipped_variants": []
+      },
+      {
+        "tc_id": "TC-TODO-023",
+        "required_variants": [
+          "chromium--none--r0"
+        ],
+        "variant_slugs": [
+          "chromium--none--r0"
+        ],
+        "status": "PASS",
+        "missing_variants": [],
+        "skipped_variants": []
+      },
+      {
+        "tc_id": "TC-TODO-024",
+        "required_variants": [
+          "chromium--none--r0"
+        ],
+        "variant_slugs": [
+          "chromium--none--r0"
+        ],
+        "status": "PASS",
+        "missing_variants": [],
+        "skipped_variants": []
+      },
+      {
+        "tc_id": "TC-TODO-025",
+        "required_variants": [
+          "chromium--none--r0"
+        ],
+        "variant_slugs": [
+          "chromium--none--r0"
+        ],
+        "status": "PASS",
+        "missing_variants": [],
+        "skipped_variants": []
+      },
+      {
+        "tc_id": "TC-TODO-026",
+        "required_variants": [
+          "chromium--none--r0"
+        ],
+        "variant_slugs": [
+          "chromium--none--r0"
+        ],
+        "status": "PASS",
+        "missing_variants": [],
+        "skipped_variants": []
+      },
+      {
+        "tc_id": "TC-TODO-027",
+        "required_variants": [
+          "chromium--none--r0"
+        ],
+        "variant_slugs": [
+          "chromium--none--r0"
+        ],
+        "status": "PASS",
+        "missing_variants": [],
+        "skipped_variants": []
+      },
+      {
+        "tc_id": "TC-TODO-028",
+        "required_variants": [
+          "chromium--none--r0"
+        ],
+        "variant_slugs": [
+          "chromium--none--r0"
+        ],
+        "status": "PASS",
+        "missing_variants": [],
+        "skipped_variants": []
+      },
+      {
+        "tc_id": "TC-TODO-029",
+        "required_variants": [
+          "chromium--none--r0"
+        ],
+        "variant_slugs": [
+          "chromium--none--r0"
+        ],
+        "status": "PASS",
+        "missing_variants": [],
+        "skipped_variants": []
+      },
+      {
+        "tc_id": "TC-TODO-031",
+        "required_variants": [
+          "chromium--none--r0"
+        ],
+        "variant_slugs": [
+          "chromium--none--r0"
+        ],
+        "status": "PASS",
+        "missing_variants": [],
+        "skipped_variants": []
+      }
+    ],
+    "variant_totals": {
+      "passed": 30,
+      "failed": 0,
+      "skipped": 0,
+      "not_run": 0,
+      "partial": 0
+    }
+  },
+  "results": [
+    {
+      "tc_id": "TC-TODO-001",
+      "req_id": "FR-006, FR-015, US1-AS1",
+      "test_name": "Opening the application with no tasks shows \"No tasks yet.\" and the \"New task\" field, without sign-in",
+      "status": "PASS",
+      "duration_ms": 1086,
+      "classification": "N/A",
+      "unverified_assumption": false,
+      "assumption": null,
+      "error_message": null,
+      "root_cause": null,
+      "run_group": "serial:empty-list",
+      "run_mode": "serial",
+      "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-001/chromium--none--r0/attempt-2.png",
+      "failure_screenshot": null,
+      "severity": "N/A",
+      "priority": "N/A",
+      "healed_in_first_run": false,
+      "attempts": 2,
+      "missing_variants": [],
+      "variants": [
+        {
+          "variant_slug": "chromium--none--r0",
+          "project": "chromium",
+          "final_status": "PASS",
+          "duration_ms": 1086,
+          "attempts": [
+            {
+              "attempt": 1,
+              "stage": "smoke",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-001/chromium--none--r0/attempt-1.png",
+              "failure_screenshot": null
+            },
+            {
+              "attempt": 2,
+              "stage": "smoke",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-001/chromium--none--r0/attempt-2.png",
+              "failure_screenshot": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tc_id": "TC-TODO-002",
+      "req_id": "FR-001, FR-004, FR-013, US1-AS2",
+      "test_name": "Adding \"Buy milk\" shows it at the top as not completed and clears the field",
+      "status": "PASS",
+      "duration_ms": 31002,
+      "classification": "N/A",
+      "unverified_assumption": false,
+      "assumption": null,
+      "error_message": null,
+      "root_cause": null,
+      "run_group": "serial:task-list",
+      "run_mode": "serial",
+      "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-002/chromium--none--r0/attempt-2.png",
+      "failure_screenshot": null,
+      "severity": "N/A",
+      "priority": "N/A",
+      "healed_in_first_run": false,
+      "attempts": 2,
+      "missing_variants": [],
+      "variants": [
+        {
+          "variant_slug": "chromium--none--r0",
+          "project": "chromium",
+          "final_status": "PASS",
+          "duration_ms": 31002,
+          "attempts": [
+            {
+              "attempt": 1,
+              "stage": "smoke",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-002/chromium--none--r0/attempt-1.png",
+              "failure_screenshot": null
+            },
+            {
+              "attempt": 2,
+              "stage": "smoke",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-002/chromium--none--r0/attempt-2.png",
+              "failure_screenshot": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tc_id": "TC-TODO-003",
+      "req_id": "FR-002, US1-AS3",
+      "test_name": "Pressing \"Add\" with an empty title shows \"Enter a title for the task.\" and adds nothing",
+      "status": "PASS",
+      "duration_ms": 2616,
+      "classification": "N/A",
+      "unverified_assumption": false,
+      "assumption": null,
+      "error_message": null,
+      "root_cause": null,
+      "run_group": "parallel",
+      "run_mode": "parallel",
+      "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-003/chromium--none--r0/attempt-2.png",
+      "failure_screenshot": null,
+      "severity": "N/A",
+      "priority": "N/A",
+      "healed_in_first_run": false,
+      "attempts": 2,
+      "missing_variants": [],
+      "variants": [
+        {
+          "variant_slug": "chromium--none--r0",
+          "project": "chromium",
+          "final_status": "PASS",
+          "duration_ms": 2616,
+          "attempts": [
+            {
+              "attempt": 1,
+              "stage": "negative",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-003/chromium--none--r0/attempt-1.png",
+              "failure_screenshot": null
+            },
+            {
+              "attempt": 2,
+              "stage": "negative",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-003/chromium--none--r0/attempt-2.png",
+              "failure_screenshot": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tc_id": "TC-TODO-004",
+      "req_id": "FR-002, FR-003, US1-AS3",
+      "test_name": "A title of only spaces shows \"Enter a title for the task.\" and adds nothing",
+      "status": "PASS",
+      "duration_ms": 2738,
+      "classification": "N/A",
+      "unverified_assumption": false,
+      "assumption": null,
+      "error_message": null,
+      "root_cause": null,
+      "run_group": "parallel",
+      "run_mode": "parallel",
+      "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-004/chromium--none--r0/attempt-2.png",
+      "failure_screenshot": null,
+      "severity": "N/A",
+      "priority": "N/A",
+      "healed_in_first_run": false,
+      "attempts": 2,
+      "missing_variants": [],
+      "variants": [
+        {
+          "variant_slug": "chromium--none--r0",
+          "project": "chromium",
+          "final_status": "PASS",
+          "duration_ms": 2738,
+          "attempts": [
+            {
+              "attempt": 1,
+              "stage": "negative",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-004/chromium--none--r0/attempt-1.png",
+              "failure_screenshot": null
+            },
+            {
+              "attempt": 2,
+              "stage": "negative",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-004/chromium--none--r0/attempt-2.png",
+              "failure_screenshot": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tc_id": "TC-TODO-005",
+      "req_id": "FR-003",
+      "test_name": "A title typed with spaces before and after is shown without them",
+      "status": "PASS",
+      "duration_ms": 3051,
+      "classification": "N/A",
+      "unverified_assumption": false,
+      "assumption": null,
+      "error_message": null,
+      "root_cause": null,
+      "run_group": "serial:task-list",
+      "run_mode": "serial",
+      "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-005/chromium--none--r0/attempt-2.png",
+      "failure_screenshot": null,
+      "severity": "N/A",
+      "priority": "N/A",
+      "healed_in_first_run": false,
+      "attempts": 2,
+      "missing_variants": [],
+      "variants": [
+        {
+          "variant_slug": "chromium--none--r0",
+          "project": "chromium",
+          "final_status": "PASS",
+          "duration_ms": 3051,
+          "attempts": [
+            {
+              "attempt": 1,
+              "stage": "positive",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-005/chromium--none--r0/attempt-1.png",
+              "failure_screenshot": null
+            },
+            {
+              "attempt": 2,
+              "stage": "positive",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-005/chromium--none--r0/attempt-2.png",
+              "failure_screenshot": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tc_id": "TC-TODO-006",
+      "req_id": "FR-012, US1-AS4, SC-004",
+      "test_name": "Tasks added are shown with the same titles and states after reopening the application",
+      "status": "PASS",
+      "duration_ms": 3030,
+      "classification": "N/A",
+      "unverified_assumption": false,
+      "assumption": null,
+      "error_message": null,
+      "root_cause": null,
+      "run_group": "serial:task-list",
+      "run_mode": "serial",
+      "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-006/chromium--none--r0/attempt-2.png",
+      "failure_screenshot": null,
+      "severity": "N/A",
+      "priority": "N/A",
+      "healed_in_first_run": false,
+      "attempts": 2,
+      "missing_variants": [],
+      "variants": [
+        {
+          "variant_slug": "chromium--none--r0",
+          "project": "chromium",
+          "final_status": "PASS",
+          "duration_ms": 3030,
+          "attempts": [
+            {
+              "attempt": 1,
+              "stage": "positive",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-006/chromium--none--r0/attempt-1.png",
+              "failure_screenshot": null
+            },
+            {
+              "attempt": 2,
+              "stage": "positive",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-006/chromium--none--r0/attempt-2.png",
+              "failure_screenshot": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tc_id": "TC-TODO-007",
+      "req_id": "FR-005, US1-AS5",
+      "test_name": "Every task shows its title and whether it is completed",
+      "status": "PASS",
+      "duration_ms": 3250,
+      "classification": "N/A",
+      "unverified_assumption": false,
+      "assumption": null,
+      "error_message": null,
+      "root_cause": null,
+      "run_group": "serial:task-list",
+      "run_mode": "serial",
+      "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-007/chromium--none--r0/attempt-2.png",
+      "failure_screenshot": null,
+      "severity": "N/A",
+      "priority": "N/A",
+      "healed_in_first_run": false,
+      "attempts": 2,
+      "missing_variants": [],
+      "variants": [
+        {
+          "variant_slug": "chromium--none--r0",
+          "project": "chromium",
+          "final_status": "PASS",
+          "duration_ms": 3250,
+          "attempts": [
+            {
+              "attempt": 1,
+              "stage": "positive",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-007/chromium--none--r0/attempt-1.png",
+              "failure_screenshot": null
+            },
+            {
+              "attempt": 2,
+              "stage": "positive",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-007/chromium--none--r0/attempt-2.png",
+              "failure_screenshot": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tc_id": "TC-TODO-008",
+      "req_id": "FR-001, US1-AS6",
+      "test_name": "Typing past 100 characters leaves exactly 100 in the field, and adding saves that title",
+      "status": "PASS",
+      "duration_ms": 1812,
+      "classification": "N/A",
+      "unverified_assumption": false,
+      "assumption": null,
+      "error_message": null,
+      "root_cause": null,
+      "run_group": "serial:task-list",
+      "run_mode": "serial",
+      "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-008/chromium--none--r0/attempt-2.png",
+      "failure_screenshot": null,
+      "severity": "N/A",
+      "priority": "N/A",
+      "healed_in_first_run": false,
+      "attempts": 2,
+      "missing_variants": [],
+      "variants": [
+        {
+          "variant_slug": "chromium--none--r0",
+          "project": "chromium",
+          "final_status": "PASS",
+          "duration_ms": 1812,
+          "attempts": [
+            {
+              "attempt": 1,
+              "stage": "positive",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-008/chromium--none--r0/attempt-1.png",
+              "failure_screenshot": null
+            },
+            {
+              "attempt": 2,
+              "stage": "positive",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-008/chromium--none--r0/attempt-2.png",
+              "failure_screenshot": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tc_id": "TC-TODO-009",
+      "req_id": "FR-001, US1-AS6",
+      "test_name": "Pasting 120 characters leaves the first 100 in the field, and adding saves them",
+      "status": "PASS",
+      "duration_ms": 1540,
+      "classification": "N/A",
+      "unverified_assumption": false,
+      "assumption": null,
+      "error_message": null,
+      "root_cause": null,
+      "run_group": "serial:task-list",
+      "run_mode": "serial",
+      "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-009/chromium--none--r0/attempt-2.png",
+      "failure_screenshot": null,
+      "severity": "N/A",
+      "priority": "N/A",
+      "healed_in_first_run": false,
+      "attempts": 2,
+      "missing_variants": [],
+      "variants": [
+        {
+          "variant_slug": "chromium--none--r0",
+          "project": "chromium",
+          "final_status": "PASS",
+          "duration_ms": 1540,
+          "attempts": [
+            {
+              "attempt": 1,
+              "stage": "positive",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-009/chromium--none--r0/attempt-1.png",
+              "failure_screenshot": null
+            },
+            {
+              "attempt": 2,
+              "stage": "positive",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-009/chromium--none--r0/attempt-2.png",
+              "failure_screenshot": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tc_id": "TC-TODO-010",
+      "req_id": "FR-001, US1-AS7",
+      "test_name": "Adding a title that already exists adds a second task with no warning",
+      "status": "PASS",
+      "duration_ms": 2101,
+      "classification": "N/A",
+      "unverified_assumption": false,
+      "assumption": null,
+      "error_message": null,
+      "root_cause": null,
+      "run_group": "serial:task-list",
+      "run_mode": "serial",
+      "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-010/chromium--none--r0/attempt-2.png",
+      "failure_screenshot": null,
+      "severity": "N/A",
+      "priority": "N/A",
+      "healed_in_first_run": false,
+      "attempts": 2,
+      "missing_variants": [],
+      "variants": [
+        {
+          "variant_slug": "chromium--none--r0",
+          "project": "chromium",
+          "final_status": "PASS",
+          "duration_ms": 2101,
+          "attempts": [
+            {
+              "attempt": 1,
+              "stage": "positive",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-010/chromium--none--r0/attempt-1.png",
+              "failure_screenshot": null
+            },
+            {
+              "attempt": 2,
+              "stage": "positive",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-010/chromium--none--r0/attempt-2.png",
+              "failure_screenshot": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tc_id": "TC-TODO-011",
+      "req_id": "FR-005, US1-AS8",
+      "test_name": "A newly added task appears above the tasks added before it",
+      "status": "PASS",
+      "duration_ms": 2262,
+      "classification": "N/A",
+      "unverified_assumption": false,
+      "assumption": null,
+      "error_message": null,
+      "root_cause": null,
+      "run_group": "serial:task-list",
+      "run_mode": "serial",
+      "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-011/chromium--none--r0/attempt-2.png",
+      "failure_screenshot": null,
+      "severity": "N/A",
+      "priority": "N/A",
+      "healed_in_first_run": false,
+      "attempts": 2,
+      "missing_variants": [],
+      "variants": [
+        {
+          "variant_slug": "chromium--none--r0",
+          "project": "chromium",
+          "final_status": "PASS",
+          "duration_ms": 2262,
+          "attempts": [
+            {
+              "attempt": 1,
+              "stage": "positive",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-011/chromium--none--r0/attempt-1.png",
+              "failure_screenshot": null
+            },
+            {
+              "attempt": 2,
+              "stage": "positive",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-011/chromium--none--r0/attempt-2.png",
+              "failure_screenshot": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tc_id": "TC-TODO-012",
+      "req_id": "FR-001, Edge (double add)",
+      "test_name": "Double-clicking \"Add\" adds exactly one task",
+      "status": "PASS",
+      "duration_ms": 2182,
+      "classification": "N/A",
+      "unverified_assumption": false,
+      "assumption": null,
+      "error_message": null,
+      "root_cause": null,
+      "run_group": "serial:task-list",
+      "run_mode": "serial",
+      "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-012/chromium--none--r0/attempt-2.png",
+      "failure_screenshot": null,
+      "severity": "N/A",
+      "priority": "N/A",
+      "healed_in_first_run": false,
+      "attempts": 2,
+      "missing_variants": [],
+      "variants": [
+        {
+          "variant_slug": "chromium--none--r0",
+          "project": "chromium",
+          "final_status": "PASS",
+          "duration_ms": 2182,
+          "attempts": [
+            {
+              "attempt": 1,
+              "stage": "positive",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-012/chromium--none--r0/attempt-1.png",
+              "failure_screenshot": null
+            },
+            {
+              "attempt": 2,
+              "stage": "positive",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-012/chromium--none--r0/attempt-2.png",
+              "failure_screenshot": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tc_id": "TC-TODO-013",
+      "req_id": "FR-007, FR-008, US2-AS1",
+      "test_name": "Marking \"Buy milk\" as completed shows it as \"Completed\", visibly different from open tasks",
+      "status": "PASS",
+      "duration_ms": 3680,
+      "classification": "N/A",
+      "unverified_assumption": false,
+      "assumption": null,
+      "error_message": null,
+      "root_cause": null,
+      "run_group": "serial:task-list",
+      "run_mode": "serial",
+      "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-013/chromium--none--r0/attempt-2.png",
+      "failure_screenshot": null,
+      "severity": "N/A",
+      "priority": "N/A",
+      "healed_in_first_run": false,
+      "attempts": 2,
+      "missing_variants": [],
+      "variants": [
+        {
+          "variant_slug": "chromium--none--r0",
+          "project": "chromium",
+          "final_status": "PASS",
+          "duration_ms": 3680,
+          "attempts": [
+            {
+              "attempt": 1,
+              "stage": "smoke",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-013/chromium--none--r0/attempt-1.png",
+              "failure_screenshot": null
+            },
+            {
+              "attempt": 2,
+              "stage": "smoke",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-013/chromium--none--r0/attempt-2.png",
+              "failure_screenshot": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tc_id": "TC-TODO-014",
+      "req_id": "FR-012, US2-AS2, SC-004",
+      "test_name": "A completed task is still completed after reopening the application",
+      "status": "PASS",
+      "duration_ms": 3281,
+      "classification": "N/A",
+      "unverified_assumption": false,
+      "assumption": null,
+      "error_message": null,
+      "root_cause": null,
+      "run_group": "serial:task-list",
+      "run_mode": "serial",
+      "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-014/chromium--none--r0/attempt-2.png",
+      "failure_screenshot": null,
+      "severity": "N/A",
+      "priority": "N/A",
+      "healed_in_first_run": false,
+      "attempts": 2,
+      "missing_variants": [],
+      "variants": [
+        {
+          "variant_slug": "chromium--none--r0",
+          "project": "chromium",
+          "final_status": "PASS",
+          "duration_ms": 3281,
+          "attempts": [
+            {
+              "attempt": 1,
+              "stage": "positive",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-014/chromium--none--r0/attempt-1.png",
+              "failure_screenshot": null
+            },
+            {
+              "attempt": 2,
+              "stage": "positive",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-014/chromium--none--r0/attempt-2.png",
+              "failure_screenshot": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tc_id": "TC-TODO-015",
+      "req_id": "FR-007, US2-AS3",
+      "test_name": "Completing one task leaves another task not completed",
+      "status": "PASS",
+      "duration_ms": 3653,
+      "classification": "N/A",
+      "unverified_assumption": false,
+      "assumption": null,
+      "error_message": null,
+      "root_cause": null,
+      "run_group": "serial:task-list",
+      "run_mode": "serial",
+      "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-015/chromium--none--r0/attempt-2.png",
+      "failure_screenshot": null,
+      "severity": "N/A",
+      "priority": "N/A",
+      "healed_in_first_run": false,
+      "attempts": 2,
+      "missing_variants": [],
+      "variants": [
+        {
+          "variant_slug": "chromium--none--r0",
+          "project": "chromium",
+          "final_status": "PASS",
+          "duration_ms": 3653,
+          "attempts": [
+            {
+              "attempt": 1,
+              "stage": "positive",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-015/chromium--none--r0/attempt-1.png",
+              "failure_screenshot": null
+            },
+            {
+              "attempt": 2,
+              "stage": "positive",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-015/chromium--none--r0/attempt-2.png",
+              "failure_screenshot": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tc_id": "TC-TODO-016",
+      "req_id": "FR-009, US2-AS4",
+      "test_name": "A completed task offers no action to mark it as not completed",
+      "status": "PASS",
+      "duration_ms": 3433,
+      "classification": "N/A",
+      "unverified_assumption": false,
+      "assumption": null,
+      "error_message": null,
+      "root_cause": null,
+      "run_group": "serial:task-list",
+      "run_mode": "serial",
+      "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-016/chromium--none--r0/attempt-2.png",
+      "failure_screenshot": null,
+      "severity": "N/A",
+      "priority": "N/A",
+      "healed_in_first_run": false,
+      "attempts": 2,
+      "missing_variants": [],
+      "variants": [
+        {
+          "variant_slug": "chromium--none--r0",
+          "project": "chromium",
+          "final_status": "PASS",
+          "duration_ms": 3433,
+          "attempts": [
+            {
+              "attempt": 1,
+              "stage": "negative",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-016/chromium--none--r0/attempt-1.png",
+              "failure_screenshot": null
+            },
+            {
+              "attempt": 2,
+              "stage": "negative",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-016/chromium--none--r0/attempt-2.png",
+              "failure_screenshot": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tc_id": "TC-TODO-017",
+      "req_id": "FR-005, US2-AS5",
+      "test_name": "Completing a task does not change the order of the list",
+      "status": "PASS",
+      "duration_ms": 3621,
+      "classification": "N/A",
+      "unverified_assumption": false,
+      "assumption": null,
+      "error_message": null,
+      "root_cause": null,
+      "run_group": "serial:task-list",
+      "run_mode": "serial",
+      "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-017/chromium--none--r0/attempt-2.png",
+      "failure_screenshot": null,
+      "severity": "N/A",
+      "priority": "N/A",
+      "healed_in_first_run": false,
+      "attempts": 2,
+      "missing_variants": [],
+      "variants": [
+        {
+          "variant_slug": "chromium--none--r0",
+          "project": "chromium",
+          "final_status": "PASS",
+          "duration_ms": 3621,
+          "attempts": [
+            {
+              "attempt": 1,
+              "stage": "positive",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-017/chromium--none--r0/attempt-1.png",
+              "failure_screenshot": null
+            },
+            {
+              "attempt": 2,
+              "stage": "positive",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-017/chromium--none--r0/attempt-2.png",
+              "failure_screenshot": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tc_id": "TC-TODO-018",
+      "req_id": "FR-010, FR-011, US3-AS1",
+      "test_name": "Deleting \"Buy milk\" removes it at once with no confirmation, and the other task remains",
+      "status": "PASS",
+      "duration_ms": 2712,
+      "classification": "N/A",
+      "unverified_assumption": false,
+      "assumption": null,
+      "error_message": null,
+      "root_cause": null,
+      "run_group": "serial:task-list",
+      "run_mode": "serial",
+      "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-018/chromium--none--r0/attempt-2.png",
+      "failure_screenshot": null,
+      "severity": "N/A",
+      "priority": "N/A",
+      "healed_in_first_run": false,
+      "attempts": 2,
+      "missing_variants": [],
+      "variants": [
+        {
+          "variant_slug": "chromium--none--r0",
+          "project": "chromium",
+          "final_status": "PASS",
+          "duration_ms": 2712,
+          "attempts": [
+            {
+              "attempt": 1,
+              "stage": "smoke",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-018/chromium--none--r0/attempt-1.png",
+              "failure_screenshot": null
+            },
+            {
+              "attempt": 2,
+              "stage": "smoke",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-018/chromium--none--r0/attempt-2.png",
+              "failure_screenshot": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tc_id": "TC-TODO-019",
+      "req_id": "FR-010, US3-AS2",
+      "test_name": "A completed task can be deleted",
+      "status": "PASS",
+      "duration_ms": 2327,
+      "classification": "N/A",
+      "unverified_assumption": false,
+      "assumption": null,
+      "error_message": null,
+      "root_cause": null,
+      "run_group": "serial:task-list",
+      "run_mode": "serial",
+      "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-019/chromium--none--r0/attempt-2.png",
+      "failure_screenshot": null,
+      "severity": "N/A",
+      "priority": "N/A",
+      "healed_in_first_run": false,
+      "attempts": 2,
+      "missing_variants": [],
+      "variants": [
+        {
+          "variant_slug": "chromium--none--r0",
+          "project": "chromium",
+          "final_status": "PASS",
+          "duration_ms": 2327,
+          "attempts": [
+            {
+              "attempt": 1,
+              "stage": "positive",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-019/chromium--none--r0/attempt-1.png",
+              "failure_screenshot": null
+            },
+            {
+              "attempt": 2,
+              "stage": "positive",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-019/chromium--none--r0/attempt-2.png",
+              "failure_screenshot": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tc_id": "TC-TODO-020",
+      "req_id": "FR-011, US3-AS3, SC-004",
+      "test_name": "A deleted task is not shown after reopening, and no restore action exists",
+      "status": "PASS",
+      "duration_ms": 2814,
+      "classification": "N/A",
+      "unverified_assumption": false,
+      "assumption": null,
+      "error_message": null,
+      "root_cause": null,
+      "run_group": "serial:task-list",
+      "run_mode": "serial",
+      "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-020/chromium--none--r0/attempt-2.png",
+      "failure_screenshot": null,
+      "severity": "N/A",
+      "priority": "N/A",
+      "healed_in_first_run": false,
+      "attempts": 2,
+      "missing_variants": [],
+      "variants": [
+        {
+          "variant_slug": "chromium--none--r0",
+          "project": "chromium",
+          "final_status": "PASS",
+          "duration_ms": 2814,
+          "attempts": [
+            {
+              "attempt": 1,
+              "stage": "positive",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-020/chromium--none--r0/attempt-1.png",
+              "failure_screenshot": null
+            },
+            {
+              "attempt": 2,
+              "stage": "positive",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-020/chromium--none--r0/attempt-2.png",
+              "failure_screenshot": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tc_id": "TC-TODO-021",
+      "req_id": "FR-006, US3-AS4",
+      "test_name": "Deleting the only task shows \"No tasks yet.\"",
+      "status": "PASS",
+      "duration_ms": 1649,
+      "classification": "N/A",
+      "unverified_assumption": false,
+      "assumption": null,
+      "error_message": null,
+      "root_cause": null,
+      "run_group": "serial:empty-list",
+      "run_mode": "serial",
+      "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-021/chromium--none--r0/attempt-2.png",
+      "failure_screenshot": null,
+      "severity": "N/A",
+      "priority": "N/A",
+      "healed_in_first_run": false,
+      "attempts": 2,
+      "missing_variants": [],
+      "variants": [
+        {
+          "variant_slug": "chromium--none--r0",
+          "project": "chromium",
+          "final_status": "PASS",
+          "duration_ms": 1649,
+          "attempts": [
+            {
+              "attempt": 1,
+              "stage": "positive",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-021/chromium--none--r0/attempt-1.png",
+              "failure_screenshot": null
+            },
+            {
+              "attempt": 2,
+              "stage": "positive",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-021/chromium--none--r0/attempt-2.png",
+              "failure_screenshot": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tc_id": "TC-TODO-022",
+      "req_id": "FR-014",
+      "test_name": "When the service cannot be reached, adding shows \"The task was not added. Try again.\" and no task appears",
+      "status": "PASS",
+      "duration_ms": 2881,
+      "classification": "N/A",
+      "unverified_assumption": false,
+      "assumption": null,
+      "error_message": null,
+      "root_cause": null,
+      "run_group": "parallel",
+      "run_mode": "parallel",
+      "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-022/chromium--none--r0/attempt-2.png",
+      "failure_screenshot": null,
+      "severity": "N/A",
+      "priority": "N/A",
+      "healed_in_first_run": false,
+      "attempts": 2,
+      "missing_variants": [],
+      "variants": [
+        {
+          "variant_slug": "chromium--none--r0",
+          "project": "chromium",
+          "final_status": "PASS",
+          "duration_ms": 2881,
+          "attempts": [
+            {
+              "attempt": 1,
+              "stage": "negative",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-022/chromium--none--r0/attempt-1.png",
+              "failure_screenshot": null
+            },
+            {
+              "attempt": 2,
+              "stage": "negative",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-022/chromium--none--r0/attempt-2.png",
+              "failure_screenshot": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tc_id": "TC-TODO-023",
+      "req_id": "FR-014",
+      "test_name": "When the service cannot be reached, completing shows \"The task was not marked as completed. Try again.\" and the task stays not completed",
+      "status": "PASS",
+      "duration_ms": 2724,
+      "classification": "N/A",
+      "unverified_assumption": false,
+      "assumption": null,
+      "error_message": null,
+      "root_cause": null,
+      "run_group": "serial:task-list",
+      "run_mode": "serial",
+      "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-023/chromium--none--r0/attempt-2.png",
+      "failure_screenshot": null,
+      "severity": "N/A",
+      "priority": "N/A",
+      "healed_in_first_run": false,
+      "attempts": 2,
+      "missing_variants": [],
+      "variants": [
+        {
+          "variant_slug": "chromium--none--r0",
+          "project": "chromium",
+          "final_status": "PASS",
+          "duration_ms": 2724,
+          "attempts": [
+            {
+              "attempt": 1,
+              "stage": "negative",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-023/chromium--none--r0/attempt-1.png",
+              "failure_screenshot": null
+            },
+            {
+              "attempt": 2,
+              "stage": "negative",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-023/chromium--none--r0/attempt-2.png",
+              "failure_screenshot": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tc_id": "TC-TODO-024",
+      "req_id": "FR-014",
+      "test_name": "When the service cannot be reached, deleting shows \"The task was not deleted. Try again.\" and the task stays",
+      "status": "PASS",
+      "duration_ms": 3124,
+      "classification": "N/A",
+      "unverified_assumption": false,
+      "assumption": null,
+      "error_message": null,
+      "root_cause": null,
+      "run_group": "serial:task-list",
+      "run_mode": "serial",
+      "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-024/chromium--none--r0/attempt-2.png",
+      "failure_screenshot": null,
+      "severity": "N/A",
+      "priority": "N/A",
+      "healed_in_first_run": false,
+      "attempts": 2,
+      "missing_variants": [],
+      "variants": [
+        {
+          "variant_slug": "chromium--none--r0",
+          "project": "chromium",
+          "final_status": "PASS",
+          "duration_ms": 3124,
+          "attempts": [
+            {
+              "attempt": 1,
+              "stage": "negative",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-024/chromium--none--r0/attempt-1.png",
+              "failure_screenshot": null
+            },
+            {
+              "attempt": 2,
+              "stage": "negative",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-024/chromium--none--r0/attempt-2.png",
+              "failure_screenshot": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tc_id": "TC-TODO-025",
+      "req_id": "FR-014",
+      "test_name": "When the list cannot be loaded, \"The tasks could not be loaded. Try again.\" is shown and \"Try again\" loads it",
+      "status": "PASS",
+      "duration_ms": 1744,
+      "classification": "N/A",
+      "unverified_assumption": false,
+      "assumption": null,
+      "error_message": null,
+      "root_cause": null,
+      "run_group": "parallel",
+      "run_mode": "parallel",
+      "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-025/chromium--none--r0/attempt-2.png",
+      "failure_screenshot": null,
+      "severity": "N/A",
+      "priority": "N/A",
+      "healed_in_first_run": false,
+      "attempts": 2,
+      "missing_variants": [],
+      "variants": [
+        {
+          "variant_slug": "chromium--none--r0",
+          "project": "chromium",
+          "final_status": "PASS",
+          "duration_ms": 1744,
+          "attempts": [
+            {
+              "attempt": 1,
+              "stage": "negative",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-025/chromium--none--r0/attempt-1.png",
+              "failure_screenshot": null
+            },
+            {
+              "attempt": 2,
+              "stage": "negative",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-025/chromium--none--r0/attempt-2.png",
+              "failure_screenshot": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tc_id": "TC-TODO-026",
+      "req_id": "FR-014, Edge (gone)",
+      "test_name": "Completing a task someone else deleted shows \"This task no longer exists.\" and removes it",
+      "status": "PASS",
+      "duration_ms": 3700,
+      "classification": "N/A",
+      "unverified_assumption": false,
+      "assumption": null,
+      "error_message": null,
+      "root_cause": null,
+      "run_group": "serial:task-list",
+      "run_mode": "serial",
+      "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-026/chromium--none--r0/attempt-2.png",
+      "failure_screenshot": null,
+      "severity": "N/A",
+      "priority": "N/A",
+      "healed_in_first_run": false,
+      "attempts": 2,
+      "missing_variants": [],
+      "variants": [
+        {
+          "variant_slug": "chromium--none--r0",
+          "project": "chromium",
+          "final_status": "PASS",
+          "duration_ms": 3700,
+          "attempts": [
+            {
+              "attempt": 1,
+              "stage": "negative",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-026/chromium--none--r0/attempt-1.png",
+              "failure_screenshot": null
+            },
+            {
+              "attempt": 2,
+              "stage": "negative",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-026/chromium--none--r0/attempt-2.png",
+              "failure_screenshot": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tc_id": "TC-TODO-027",
+      "req_id": "FR-014, Edge (gone)",
+      "test_name": "Deleting a task someone else deleted shows \"This task no longer exists.\" and removes it",
+      "status": "PASS",
+      "duration_ms": 3412,
+      "classification": "N/A",
+      "unverified_assumption": false,
+      "assumption": null,
+      "error_message": null,
+      "root_cause": null,
+      "run_group": "serial:task-list",
+      "run_mode": "serial",
+      "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-027/chromium--none--r0/attempt-2.png",
+      "failure_screenshot": null,
+      "severity": "N/A",
+      "priority": "N/A",
+      "healed_in_first_run": false,
+      "attempts": 2,
+      "missing_variants": [],
+      "variants": [
+        {
+          "variant_slug": "chromium--none--r0",
+          "project": "chromium",
+          "final_status": "PASS",
+          "duration_ms": 3412,
+          "attempts": [
+            {
+              "attempt": 1,
+              "stage": "negative",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-027/chromium--none--r0/attempt-1.png",
+              "failure_screenshot": null
+            },
+            {
+              "attempt": 2,
+              "stage": "negative",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-027/chromium--none--r0/attempt-2.png",
+              "failure_screenshot": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tc_id": "TC-TODO-028",
+      "req_id": "FR-016, SC-005",
+      "test_name": "Adding, completing and deleting a task works with the keyboard only",
+      "status": "PASS",
+      "duration_ms": 2220,
+      "classification": "N/A",
+      "unverified_assumption": false,
+      "assumption": null,
+      "error_message": null,
+      "root_cause": null,
+      "run_group": "serial:task-list",
+      "run_mode": "serial",
+      "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-028/chromium--none--r0/attempt-2.png",
+      "failure_screenshot": null,
+      "severity": "N/A",
+      "priority": "N/A",
+      "healed_in_first_run": false,
+      "attempts": 2,
+      "missing_variants": [],
+      "variants": [
+        {
+          "variant_slug": "chromium--none--r0",
+          "project": "chromium",
+          "final_status": "PASS",
+          "duration_ms": 2220,
+          "attempts": [
+            {
+              "attempt": 1,
+              "stage": "positive",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-028/chromium--none--r0/attempt-1.png",
+              "failure_screenshot": null
+            },
+            {
+              "attempt": 2,
+              "stage": "positive",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-028/chromium--none--r0/attempt-2.png",
+              "failure_screenshot": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tc_id": "TC-TODO-029",
+      "req_id": "FR-016, SC-005",
+      "test_name": "The page has no critical or serious accessibility violations when empty, filled and showing an error",
+      "status": "PASS",
+      "duration_ms": 4185,
+      "classification": "N/A",
+      "unverified_assumption": false,
+      "assumption": null,
+      "error_message": null,
+      "root_cause": null,
+      "run_group": "serial:empty-list",
+      "run_mode": "serial",
+      "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-029/chromium--none--r0/attempt-2.png",
+      "failure_screenshot": null,
+      "severity": "N/A",
+      "priority": "N/A",
+      "healed_in_first_run": false,
+      "attempts": 2,
+      "missing_variants": [],
+      "variants": [
+        {
+          "variant_slug": "chromium--none--r0",
+          "project": "chromium",
+          "final_status": "PASS",
+          "duration_ms": 4185,
+          "attempts": [
+            {
+              "attempt": 1,
+              "stage": "positive",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-029/chromium--none--r0/attempt-1.png",
+              "failure_screenshot": null
+            },
+            {
+              "attempt": 2,
+              "stage": "positive",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-029/chromium--none--r0/attempt-2.png",
+              "failure_screenshot": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tc_id": "TC-TODO-031",
+      "req_id": "FR-013, SC-003",
+      "test_name": "After add, complete and delete, the list shows the result within 1 second",
+      "status": "PASS",
+      "duration_ms": 1684,
+      "classification": "N/A",
+      "unverified_assumption": false,
+      "assumption": null,
+      "error_message": null,
+      "root_cause": null,
+      "run_group": "serial:task-list",
+      "run_mode": "serial",
+      "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-031/chromium--none--r0/attempt-2.png",
+      "failure_screenshot": null,
+      "severity": "N/A",
+      "priority": "N/A",
+      "healed_in_first_run": false,
+      "attempts": 2,
+      "missing_variants": [],
+      "variants": [
+        {
+          "variant_slug": "chromium--none--r0",
+          "project": "chromium",
+          "final_status": "PASS",
+          "duration_ms": 1684,
+          "attempts": [
+            {
+              "attempt": 1,
+              "stage": "positive",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-031/chromium--none--r0/attempt-1.png",
+              "failure_screenshot": null
+            },
+            {
+              "attempt": 2,
+              "stage": "positive",
+              "status": "PASS",
+              "evidence_screenshot": "screenshots/001-todo-list/phase-1/TC-TODO-031/chromium--none--r0/attempt-2.png",
+              "failure_screenshot": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "unverified_assumptions": [],
+  "bugs": [],
+  "heal_log": [],
+  "skips": []
+}

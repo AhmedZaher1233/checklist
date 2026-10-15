@@ -1,0 +1,30 @@
+# Secrets (architecture/cross-cutting/configuration-and-secrets.md, constitution QC-7)
+implementation/dev/.env
+Testing/Automation/.env
+.env
+.env.*
+!.env.example
+
+# Build output
+**/target/
+**/dist/
+**/build/
+*.class
+*.jar
+*.log
+
+# Node
+**/node_modules/
+**/coverage/
+
+# Editors and OS
+.idea/
+.vscode/
+*.iml
+*.swp
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Playwright CLI session snapshots (UI check)
+.playwright-cli/

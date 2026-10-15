@@ -1,0 +1,5 @@
+# Profile "local": the developer machine with implementation/dev/docker-compose.yml.
+# Credentials still come from TODO_DB_USER / TODO_DB_PASSWORD (values in implementation/dev/.env).
+spring:
+  datasource:
+    url: ${TODO_DB_URL:jdbc:postgresql://localhost:55432/todo}

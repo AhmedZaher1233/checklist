@@ -1,0 +1,246 @@
+openapi: 3.0.3
+info:
+  title: Task Service API
+  version: 1.0.0
+  description: >
+    Keeps the shared list of tasks. Every operation is public: no sign-in or credentials are required.
+    Errors use the application/problem+json format.
+servers:
+  - url: /api/v1
+security: []
+tags:
+  - name: Tasks
+paths:
+  /tasks:
+    get:
+      operationId: listTasks
+      tags: [Tasks]
+      summary: List all tasks, newest first
+      description: Public. Returns every task ordered by creation time, newest first.
+      security: []
+      responses:
+        '200':
+          description: All tasks, newest first (empty array when there are none)
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Task'
+        '500':
+          $ref: '#/components/responses/InternalError'
+        '503':
+          $ref: '#/components/responses/ServiceUnavailable'
+    post:
+      operationId: createTask
+      tags: [Tasks]
+      summary: Add a task
+      description: >
+        Public. Leading and trailing white space is removed from the title before it is checked and stored.
+        The stored title must then be 1 to 100 characters. Titles do not have to be unique.
+        A new task is not completed.
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateTaskRequest'
+      responses:
+        '201':
+          description: The task was created
+          headers:
+            Location:
+              description: URL of the created task
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Task'
+        '400':
+          $ref: '#/components/responses/ValidationError'
+        '500':
+          $ref: '#/components/responses/InternalError'
+        '503':
+          $ref: '#/components/responses/ServiceUnavailable'
+  /tasks/{id}:
+    parameters:
+      - name: id
+        in: path
+        required: true
+        description: Task identifier
+        schema:
+          type: string
+          format: uuid
+    patch:
+      operationId: completeTask
+      tags: [Tasks]
+      summary: Mark a task as completed
+      description: >
+        Public. Sets the task to completed. Completing a task that is already completed returns it unchanged.
+        Completion is final: a request to set a completed task back to not completed is rejected with 409.
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateTaskRequest'
+      responses:
+        '200':
+          description: The task, now completed
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Task'
+        '400':
+          $ref: '#/components/responses/ValidationError'
+        '404':
+          $ref: '#/components/responses/TaskNotFound'
+        '409':
+          description: Completion is final; the task cannot be set back to not completed
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Problem'
+              example:
+                type: /problems/task-completion-final
+                title: Completion is final
+                status: 409
+                detail: A completed task cannot be set back to not completed.
+        '500':
+          $ref: '#/components/responses/InternalError'
+        '503':
+          $ref: '#/components/responses/ServiceUnavailable'
+    delete:
+      operationId: deleteTask
+      tags: [Tasks]
+      summary: Delete a task permanently
+      description: Public. Removes the task at once; it cannot be restored.
+      security: []
+      responses:
+        '204':
+          description: The task was deleted
+        '404':
+          $ref: '#/components/responses/TaskNotFound'
+        '500':
+          $ref: '#/components/responses/InternalError'
+        '503':
+          $ref: '#/components/responses/ServiceUnavailable'
+components:
+  schemas:
+    Task:
+      type: object
+      required: [id, title, completed, createdAt]
+      properties:
+        id:
+          type: string
+          format: uuid
+          example: 0b7e4c1e-3f7a-4f5e-9d61-2a8f5c3b9e10
+        title:
+          type: string
+          minLength: 1
+          maxLength: 100
+          example: Buy milk
+        completed:
+          type: boolean
+          example: false
+        createdAt:
+          type: string
+          format: date-time
+          description: When the task was created, in UTC
+          example: '2026-10-13T08:30:00.123456Z'
+    CreateTaskRequest:
+      type: object
+      required: [title]
+      properties:
+        title:
+          type: string
+          description: Title as typed; white space at either end is removed before checking
+          example: Buy milk
+    UpdateTaskRequest:
+      type: object
+      required: [completed]
+      properties:
+        completed:
+          type: boolean
+          description: Must be true; false is rejected for a completed task
+          example: true
+    Problem:
+      type: object
+      required: [type, title, status]
+      properties:
+        type:
+          type: string
+          example: /problems/validation
+        title:
+          type: string
+        status:
+          type: integer
+        detail:
+          type: string
+        errors:
+          type: array
+          description: Present for invalid input; one entry per invalid field
+          items:
+            $ref: '#/components/schemas/FieldError'
+    FieldError:
+      type: object
+      required: [field, code]
+      properties:
+        field:
+          type: string
+          example: title
+        code:
+          type: string
+          enum: [required, too-long, invalid]
+          example: required
+        message:
+          type: string
+          example: A title is required.
+  responses:
+    ValidationError:
+      description: The request is invalid
+      content:
+        application/problem+json:
+          schema:
+            $ref: '#/components/schemas/Problem'
+          example:
+            type: /problems/validation
+            title: Invalid request
+            status: 400
+            errors:
+              - field: title
+                code: required
+                message: A title is required.
+    TaskNotFound:
+      description: The task does not exist (for example it was deleted)
+      content:
+        application/problem+json:
+          schema:
+            $ref: '#/components/schemas/Problem'
+          example:
+            type: /problems/task-not-found
+            title: Task not found
+            status: 404
+    ServiceUnavailable:
+      description: The service cannot reach its data store
+      content:
+        application/problem+json:
+          schema:
+            $ref: '#/components/schemas/Problem'
+          example:
+            type: /problems/service-unavailable
+            title: Service unavailable
+            status: 503
+    InternalError:
+      description: Unexpected error; no internal details are returned
+      content:
+        application/problem+json:
+          schema:
+            $ref: '#/components/schemas/Problem'
+          example:
+            type: /problems/internal
+            title: Unexpected error
+            status: 500

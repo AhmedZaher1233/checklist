@@ -1,0 +1,154 @@
+{
+  "chromium--none--r0": [
+    {
+      "title": "Tasks_Tests\\01-add-and-view.spec.ts › FR-006, FR-015, US1-AS1: the empty list — run group serial:empty-list › [TC-TODO-001] Opening the application with no tasks shows \"No tasks yet.\" and the \"New task\" field, without sign-in",
+      "project": "chromium",
+      "file": "D:\\companies portal- FE\\Claude\\checklist\\testing\\Automation\\tests\\Tasks_Tests\\01-add-and-view.spec.ts"
+    },
+    {
+      "title": "Tasks_Tests\\01-add-and-view.spec.ts › FR-001, FR-003, FR-004, FR-005, FR-012, FR-013, US1-AS2, US1-AS4 … US1-AS8: add and view — run group serial:task-list › [TC-TODO-002] Adding \"Buy milk\" shows it at the top as not completed and clears the field",
+      "project": "chromium",
+      "file": "D:\\companies portal- FE\\Claude\\checklist\\testing\\Automation\\tests\\Tasks_Tests\\01-add-and-view.spec.ts"
+    },
+    {
+      "title": "Tasks_Tests\\02-complete.spec.ts › FR-005, FR-007, FR-008, FR-009, FR-012, US2-AS1 … US2-AS5: mark a task as completed — run group serial:task-list › [TC-TODO-013] Marking \"Buy milk\" as completed shows it as \"Completed\", visibly different from open tasks",
+      "project": "chromium",
+      "file": "D:\\companies portal- FE\\Claude\\checklist\\testing\\Automation\\tests\\Tasks_Tests\\02-complete.spec.ts"
+    },
+    {
+      "title": "Tasks_Tests\\03-delete.spec.ts › FR-010, FR-011, US3-AS1 … US3-AS3: delete a task — run group serial:task-list › [TC-TODO-018] Deleting \"Buy milk\" removes it at once with no confirmation, and the other task remains",
+      "project": "chromium",
+      "file": "D:\\companies portal- FE\\Claude\\checklist\\testing\\Automation\\tests\\Tasks_Tests\\03-delete.spec.ts"
+    },
+    {
+      "title": "Tasks_Tests\\03-delete.spec.ts › FR-006, US3-AS4: deleting the only task — run group serial:empty-list › [TC-TODO-021] Deleting the only task shows \"No tasks yet.\"",
+      "project": "chromium",
+      "file": "D:\\companies portal- FE\\Claude\\checklist\\testing\\Automation\\tests\\Tasks_Tests\\03-delete.spec.ts"
+    },
+    {
+      "title": "Tasks_Tests\\04-failures-keyboard-access.spec.ts › FR-016, SC-005: automated accessibility scan (WCAG 2.2 AA) — run group serial:empty-list › [TC-TODO-029] The page has no critical or serious accessibility violations when empty, filled and showing an error",
+      "project": "chromium",
+      "file": "D:\\companies portal- FE\\Claude\\checklist\\testing\\Automation\\tests\\Tasks_Tests\\04-failures-keyboard-access.spec.ts"
+    },
+    {
+      "title": "Tasks_Tests\\01-add-and-view.spec.ts › FR-001, FR-003, FR-004, FR-005, FR-012, FR-013, US1-AS2, US1-AS4 … US1-AS8: add and view — run group serial:task-list › [TC-TODO-005] A title typed with spaces before and after is shown without them",
+      "project": "chromium",
+      "file": "D:\\companies portal- FE\\Claude\\checklist\\testing\\Automation\\tests\\Tasks_Tests\\01-add-and-view.spec.ts"
+    },
+    {
+      "title": "Tasks_Tests\\01-add-and-view.spec.ts › FR-001, FR-003, FR-004, FR-005, FR-012, FR-013, US1-AS2, US1-AS4 … US1-AS8: add and view — run group serial:task-list › [TC-TODO-006] Tasks added are shown with the same titles and states after reopening the application",
+      "project": "chromium",
+      "file": "D:\\companies portal- FE\\Claude\\checklist\\testing\\Automation\\tests\\Tasks_Tests\\01-add-and-view.spec.ts"
+    },
+    {
+      "title": "Tasks_Tests\\01-add-and-view.spec.ts › FR-001, FR-003, FR-004, FR-005, FR-012, FR-013, US1-AS2, US1-AS4 … US1-AS8: add and view — run group serial:task-list › [TC-TODO-007] Every task shows its title and whether it is completed",
+      "project": "chromium",
+      "file": "D:\\companies portal- FE\\Claude\\checklist\\testing\\Automation\\tests\\Tasks_Tests\\01-add-and-view.spec.ts"
+    },
+    {
+      "title": "Tasks_Tests\\01-add-and-view.spec.ts › FR-001, FR-003, FR-004, FR-005, FR-012, FR-013, US1-AS2, US1-AS4 … US1-AS8: add and view — run group serial:task-list › [TC-TODO-008] Typing past 100 characters leaves exactly 100 in the field, and adding saves that title",
+      "project": "chromium",
+      "file": "D:\\companies portal- FE\\Claude\\checklist\\testing\\Automation\\tests\\Tasks_Tests\\01-add-and-view.spec.ts"
+    },
+    {
+      "title": "Tasks_Tests\\01-add-and-view.spec.ts › FR-001, FR-003, FR-004, FR-005, FR-012, FR-013, US1-AS2, US1-AS4 … US1-AS8: add and view — run group serial:task-list › [TC-TODO-009] Pasting 120 characters leaves the first 100 in the field, and adding saves them",
+      "project": "chromium",
+      "file": "D:\\companies portal- FE\\Claude\\checklist\\testing\\Automation\\tests\\Tasks_Tests\\01-add-and-view.spec.ts"
+    },
+    {
+      "title": "Tasks_Tests\\01-add-and-view.spec.ts › FR-001, FR-003, FR-004, FR-005, FR-012, FR-013, US1-AS2, US1-AS4 … US1-AS8: add and view — run group serial:task-list › [TC-TODO-010] Adding a title that already exists adds a second task with no warning",
+      "project": "chromium",
+      "file": "D:\\companies portal- FE\\Claude\\checklist\\testing\\Automation\\tests\\Tasks_Tests\\01-add-and-view.spec.ts"
+    },
+    {
+      "title": "Tasks_Tests\\01-add-and-view.spec.ts › FR-001, FR-003, FR-004, FR-005, FR-012, FR-013, US1-AS2, US1-AS4 … US1-AS8: add and view — run group serial:task-list › [TC-TODO-011] A newly added task appears above the tasks added before it",
+      "project": "chromium",
+      "file": "D:\\companies portal- FE\\Claude\\checklist\\testing\\Automation\\tests\\Tasks_Tests\\01-add-and-view.spec.ts"
+    },
+    {
+      "title": "Tasks_Tests\\01-add-and-view.spec.ts › FR-001, FR-003, FR-004, FR-005, FR-012, FR-013, US1-AS2, US1-AS4 … US1-AS8: add and view — run group serial:task-list › [TC-TODO-012] Double-clicking \"Add\" adds exactly one task",
+      "project": "chromium",
+      "file": "D:\\companies portal- FE\\Claude\\checklist\\testing\\Automation\\tests\\Tasks_Tests\\01-add-and-view.spec.ts"
+    },
+    {
+      "title": "Tasks_Tests\\02-complete.spec.ts › FR-005, FR-007, FR-008, FR-009, FR-012, US2-AS1 … US2-AS5: mark a task as completed — run group serial:task-list › [TC-TODO-014] A completed task is still completed after reopening the application",
+      "project": "chromium",
+      "file": "D:\\companies portal- FE\\Claude\\checklist\\testing\\Automation\\tests\\Tasks_Tests\\02-complete.spec.ts"
+    },
+    {
+      "title": "Tasks_Tests\\02-complete.spec.ts › FR-005, FR-007, FR-008, FR-009, FR-012, US2-AS1 … US2-AS5: mark a task as completed — run group serial:task-list › [TC-TODO-015] Completing one task leaves another task not completed",
+      "project": "chromium",
+      "file": "D:\\companies portal- FE\\Claude\\checklist\\testing\\Automation\\tests\\Tasks_Tests\\02-complete.spec.ts"
+    },
+    {
+      "title": "Tasks_Tests\\02-complete.spec.ts › FR-005, FR-007, FR-008, FR-009, FR-012, US2-AS1 … US2-AS5: mark a task as completed — run group serial:task-list › [TC-TODO-017] Completing a task does not change the order of the list",
+      "project": "chromium",
+      "file": "D:\\companies portal- FE\\Claude\\checklist\\testing\\Automation\\tests\\Tasks_Tests\\02-complete.spec.ts"
+    },
+    {
+      "title": "Tasks_Tests\\03-delete.spec.ts › FR-010, FR-011, US3-AS1 … US3-AS3: delete a task — run group serial:task-list › [TC-TODO-019] A completed task can be deleted",
+      "project": "chromium",
+      "file": "D:\\companies portal- FE\\Claude\\checklist\\testing\\Automation\\tests\\Tasks_Tests\\03-delete.spec.ts"
+    },
+    {
+      "title": "Tasks_Tests\\03-delete.spec.ts › FR-010, FR-011, US3-AS1 … US3-AS3: delete a task — run group serial:task-list › [TC-TODO-020] A deleted task is not shown after reopening, and no restore action exists",
+      "project": "chromium",
+      "file": "D:\\companies portal- FE\\Claude\\checklist\\testing\\Automation\\tests\\Tasks_Tests\\03-delete.spec.ts"
+    },
+    {
+      "title": "Tasks_Tests\\04-failures-keyboard-access.spec.ts › FR-013, FR-016, SC-003, SC-005: keyboard and timing — run group serial:task-list › [TC-TODO-028] Adding, completing and deleting a task works with the keyboard only",
+      "project": "chromium",
+      "file": "D:\\companies portal- FE\\Claude\\checklist\\testing\\Automation\\tests\\Tasks_Tests\\04-failures-keyboard-access.spec.ts"
+    },
+    {
+      "title": "Tasks_Tests\\04-failures-keyboard-access.spec.ts › FR-013, FR-016, SC-003, SC-005: keyboard and timing — run group serial:task-list › [TC-TODO-031] After add, complete and delete, the list shows the result within 1 second",
+      "project": "chromium",
+      "file": "D:\\companies portal- FE\\Claude\\checklist\\testing\\Automation\\tests\\Tasks_Tests\\04-failures-keyboard-access.spec.ts"
+    },
+    {
+      "title": "Tasks_Tests\\01-add-and-view.spec.ts › FR-002, FR-003, US1-AS3: an empty or blank title is rejected — run group parallel › [TC-TODO-004] A title of only spaces shows \"Enter a title for the task.\" and adds nothing",
+      "project": "chromium",
+      "file": "D:\\companies portal- FE\\Claude\\checklist\\testing\\Automation\\tests\\Tasks_Tests\\01-add-and-view.spec.ts"
+    },
+    {
+      "title": "Tasks_Tests\\01-add-and-view.spec.ts › FR-002, FR-003, US1-AS3: an empty or blank title is rejected — run group parallel › [TC-TODO-003] Pressing \"Add\" with an empty title shows \"Enter a title for the task.\" and adds nothing",
+      "project": "chromium",
+      "file": "D:\\companies portal- FE\\Claude\\checklist\\testing\\Automation\\tests\\Tasks_Tests\\01-add-and-view.spec.ts"
+    },
+    {
+      "title": "Tasks_Tests\\04-failures-keyboard-access.spec.ts › FR-014: failed add and failed load — run group parallel › [TC-TODO-025] When the list cannot be loaded, \"The tasks could not be loaded. Try again.\" is shown and \"Try again\" loads it",
+      "project": "chromium",
+      "file": "D:\\companies portal- FE\\Claude\\checklist\\testing\\Automation\\tests\\Tasks_Tests\\04-failures-keyboard-access.spec.ts"
+    },
+    {
+      "title": "Tasks_Tests\\04-failures-keyboard-access.spec.ts › FR-014: failed add and failed load — run group parallel › [TC-TODO-022] When the service cannot be reached, adding shows \"The task was not added. Try again.\" and no task appears",
+      "project": "chromium",
+      "file": "D:\\companies portal- FE\\Claude\\checklist\\testing\\Automation\\tests\\Tasks_Tests\\04-failures-keyboard-access.spec.ts"
+    },
+    {
+      "title": "Tasks_Tests\\02-complete.spec.ts › FR-005, FR-007, FR-008, FR-009, FR-012, US2-AS1 … US2-AS5: mark a task as completed — run group serial:task-list › [TC-TODO-016] A completed task offers no action to mark it as not completed",
+      "project": "chromium",
+      "file": "D:\\companies portal- FE\\Claude\\checklist\\testing\\Automation\\tests\\Tasks_Tests\\02-complete.spec.ts"
+    },
+    {
+      "title": "Tasks_Tests\\04-failures-keyboard-access.spec.ts › FR-014, edge case \"task already deleted\": failed changes — run group serial:task-list › [TC-TODO-023] When the service cannot be reached, completing shows \"The task was not marked as completed. Try again.\" and the task stays not completed",
+      "project": "chromium",
+      "file": "D:\\companies portal- FE\\Claude\\checklist\\testing\\Automation\\tests\\Tasks_Tests\\04-failures-keyboard-access.spec.ts"
+    },
+    {
+      "title": "Tasks_Tests\\04-failures-keyboard-access.spec.ts › FR-014, edge case \"task already deleted\": failed changes — run group serial:task-list › [TC-TODO-024] When the service cannot be reached, deleting shows \"The task was not deleted. Try again.\" and the task stays",
+      "project": "chromium",
+      "file": "D:\\companies portal- FE\\Claude\\checklist\\testing\\Automation\\tests\\Tasks_Tests\\04-failures-keyboard-access.spec.ts"
+    },
+    {
+      "title": "Tasks_Tests\\04-failures-keyboard-access.spec.ts › FR-014, edge case \"task already deleted\": failed changes — run group serial:task-list › [TC-TODO-026] Completing a task someone else deleted shows \"This task no longer exists.\" and removes it",
+      "project": "chromium",
+      "file": "D:\\companies portal- FE\\Claude\\checklist\\testing\\Automation\\tests\\Tasks_Tests\\04-failures-keyboard-access.spec.ts"
+    },
+    {
+      "title": "Tasks_Tests\\04-failures-keyboard-access.spec.ts › FR-014, edge case \"task already deleted\": failed changes — run group serial:task-list › [TC-TODO-027] Deleting a task someone else deleted shows \"This task no longer exists.\" and removes it",
+      "project": "chromium",
+      "file": "D:\\companies portal- FE\\Claude\\checklist\\testing\\Automation\\tests\\Tasks_Tests\\04-failures-keyboard-access.spec.ts"
+    }
+  ]
+}

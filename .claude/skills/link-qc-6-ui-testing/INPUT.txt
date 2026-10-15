@@ -1,0 +1,108 @@
+SKILL: link-qc-6-ui-testing
+WHAT IT DOES: Visual UI QA audit. Compares an implemented screen (live URL through the
+Playwright CLI in Google Chrome, or screenshots) against an approved design (Figma through the Figma MCP,
+design screenshots, or a live reference site) — or, with no design, against the codebase's own
+design tokens, internal consistency, WCAG and RTL rules — and writes a "UI Visual QA Bug
+Report" (.md) where every finding is a full, reproducible bug with red-boxed evidence
+screenshots. Runs at any point of the pipeline, per screen; it is not a gate for anything and
+nothing gates it.
+
+============================================================
+INPUT — WHAT YOU MUST PROVIDE
+============================================================
+
+ALWAYS REQUIRED:
+  1. The implemented UI                  — a live URL (preferred: computed styles, states and
+                                           breakpoints become measurable) or screenshot file(s).
+  2. A screen / page label per screen    — e.g. "Dashboard Desktop", "Login Mobile"; reused as the
+                                           file slug (dashboard_en.png, evidence/dashboard_en/).
+
+USUALLY REQUIRED (one of; absent → no-design heuristic audit, fully supported):
+  3. The approved design                 — Figma URL / node link(s) (exact tokens via the Figma
+                                           MCP; a screenshot export when the MCP is not attached),
+                                           design screenshot(s), or a live reference-site URL
+                                           (measured exactly like the implementation).
+
+OPTIONAL FLAGS / ARGUMENTS:
+  --lang en|ar|en,ar                     Language(s) to test; otherwise every shipped locale (Step 1A).
+  --screen <label>                       Screen label when only one screen is audited.
+  scope                                  Specific components to focus on (default: full audit).
+
+PASSED EXPLICITLY BY THE INVOKING COMMAND (/speckit-implement, the UI check task after the automation):
+  screens / URLs                         The feature's screens; base URL = E1_URL from Testing/Automation/.env.
+  design reference                       Figma URL / reference URL, if spec.md or plan.md names one; otherwise
+                                           a similar existing page, else the general check (never asked).
+  breakpoints                            BREAKPOINTS_PX from the constitution's QC configuration
+                                           table (the app's own CSS breakpoints add ±1 px widths).
+  locales                                LANGUAGES (code + direction) from the configuration table.
+  qa_standards                           .specify/memory/constitution.md — its "Quality Control"
+                                           article is the ONLY policy / threshold source (QC-7,
+                                           QC-10, QC-12, QC-13, QC-14, configuration table). No
+                                           steering or standards file is read; nothing is asked
+                                           that this file already answers.
+
+NOTHING IS ASKED (constitution QC-10). Derived instead (Step 1 / 1A / 1B):
+  - Languages: every shipped locale (LANGUAGES); design coverage read from the design itself
+  - Role: the task's role, else [A1]'s role; no sign-in → anonymous user
+  - Credentials: A{n}_USER / A{n}_PASSWORD from Testing/Automation/.env; none while there is no sign-in
+  - Environment: local (the running local build); app version from package.json + git commit
+  - Reference: Figma → reference URL → similar existing page → general check
+  - Narrow widths with no width media queries: fixed-width recorded in Coverage, desktop range checked
+  The report and the closing summary start with "UI checked against: <reference used>".
+
+PREREQUISITES (never installed by this skill; a missing required tool is reported BLOCKED with
+its exact install command — constitution QC-17):
+  - Playwright CLI (playwright-cli)      — required for live URLs; npm install -g @playwright/cli@latest
+                                           (Google Chrome; no MCP server)
+  - Figma MCP                            — optional, Figma designs only (remote OAuth server, no
+                                           token in files)
+  - Python + Pillow (+ numpy)            — optional, static-image annotation fallback only
+                                           (/sync-skills --tools installs the packages when Python
+                                           exists). Live URLs need no Python.
+
+============================================================
+OUTPUT — WHAT YOU GET
+============================================================
+
+Written under <base>/UI-Testing/ (<base> = the Testing/ root from Testing/qa-manifest.json, else the
+parent of the automation root — Testing/):
+
+  Expected-UI/<page-slug>_<lang>.png      approved design images + _sources.md (one row per image)
+  Actual-UI/<page-slug>_<lang>.png        implementation full-page capture (+ _segments/ per region,
+                                           _history/ keeps earlier captures for regression checks)
+  Reports/UI-Visual-QA-<page-slug>.md     the report — Environment, Coverage (counts, widths, states),
+                                           Coverage Limitations, Changes Since Last Run, one full bug
+                                           block per finding (Priority / Severity / Testing Type /
+                                           Bug Trigger / Impact / Classification / Confidence, System
+                                           Info, Steps to Reproduce, Expected, Actual, Source file:line
+                                           + Suggested fix, evidence pair), Correctly Implemented,
+                                           Accessibility (automated — axe-core, one bug per violated
+                                           rule), Console & Network Findings, Open Questions, Match
+                                           Score (design-compared) or UI/UX Quality Verdict (no
+                                           design), Final QA Verdict, Second Round
+  Reports/evidence/<page-slug>_<lang>/     bugNN_expected.png / bugNN_actual.png (red box, 4px #e00000)
+                                           + audit-log.md — one timestamped row per action the audit
+                                           performed (navigate, resize, state, capture, measurement,
+                                           axe run); the Coverage counts are derived from it
+  Coverage-Index.md                       which screens of the product were audited, which never
+
+============================================================
+WHEN TO RUN IT
+============================================================
+
+  - After a screen is implemented and a design exists → design comparison (Tier 1 with Figma MCP,
+    Tier 2 with a live reference site, Tier 3/4 with screenshots).
+  - A screen with no design → heuristic audit; never ask for a design first.
+  - Re-run on the same screen → regression check against the previous capture and report.
+  - "What have we covered?" / "what's next?" → Coverage-Index.md answers it.
+
+POLICY: constitution "Quality Control" article — QC-7 (secrets), QC-10 (UI check after the
+automation, no questions, reference order, bug vs observation, severity calibration, text
+differences, confidence, axe mapping), QC-12 (responsive / localization), QC-13 (evidence; report about the
+product never the tooling; no raw internal identifiers; personal data in captures), QC-14
+(severity / priority) and the QC project configuration table — read from the qa_standards
+file. This skill applies it and does not restate it.
+
+HARD RULES (skill-specific): no-design bugs never use "Design Conformance" / "Design
+nonconformance"; the second round (Step 10) measures completeness — it is never promised as
+"more bugs".

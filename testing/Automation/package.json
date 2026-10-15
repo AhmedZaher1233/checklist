@@ -1,0 +1,16 @@
+{
+  "name": "todo-acceptance-automation",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Acceptance automation for the To-Do List (constitution Quality Control, skill link-qc-5-test-run-automation)",
+  "scripts": {
+    "test": "playwright test",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.13.0",
+    "@playwright/test": "1.64.0",
+    "@types/node": "20",
+    "typescript": "6.0.3"
+  }
+}

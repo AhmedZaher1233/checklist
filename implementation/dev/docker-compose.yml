@@ -1,0 +1,25 @@
+# Local environment for the To-Do List (architecture/cross-cutting/configuration-and-secrets.md).
+# Credentials come from .env (git-ignored); copy .env.example to .env first.
+name: todo-dev
+
+services:
+  todo-db:
+    image: postgres:18.6
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-todo}
+      POSTGRES_USER: ${POSTGRES_USER:?set POSTGRES_USER in implementation/dev/.env}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in implementation/dev/.env}
+      TZ: UTC
+      PGTZ: UTC
+    ports:
+      - "55432:5432"
+    volumes:
+      - todo-db-data:/var/lib/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+volumes:
+  todo-db-data:
